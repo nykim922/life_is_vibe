@@ -1,0 +1,56 @@
+.onb__hero {
+  padding: 36px var(--side-pad) 24px;
+  text-align: center;
+}
+
+.onb__brand {
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin: 12px 0 8px;
+}
+
+.onb__lead {
+  font-size: 15px;
+  color: var(--ink-soft);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.onb__card {
+  background: var(--card);
+  border-radius: 28px 28px 0 0;
+  min-height: 60vh;
+  margin: 0 var(--side-pad);
+  border-radius: 28px;
+  padding: 22px;
+}
+
+.onb__example {
+  margin-bottom: 8px;
+}
+
+.onb__example-desc {
+  text-align: center;
+  font-size: 13px;
+  color: var(--ink-muted);
+  margin: 0 0 4px;
+}
+
+.onb__divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 0;
+  color: var(--ink-muted);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.onb__divider::before,
+.onb__divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--line);
+}

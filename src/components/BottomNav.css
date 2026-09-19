@@ -1,0 +1,72 @@
+.bottomnav {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: calc(12px + var(--safe-bottom));
+  width: calc(100% - 2 * var(--side-pad));
+  max-width: calc(var(--app-max-width) - 2 * var(--side-pad));
+  z-index: 60;
+  pointer-events: none;
+}
+
+.bottomnav__bar {
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+  background: var(--nav-bar);
+  border-radius: var(--radius-pill);
+  padding: 8px 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.32);
+}
+
+.bottomnav__item {
+  flex: 1 1 0;
+  display: flex;
+  justify-content: center;
+}
+
+.bottomnav__btn {
+  width: 100%;
+  min-height: 52px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  color: #8a8a90; /* 선택 안 됨: 밝은 회색 */
+  border-radius: var(--radius-pill);
+  transition: color 0.12s ease;
+}
+
+.bottomnav__iconwrap {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.12s ease;
+}
+
+/* 선택 상태: 흰색 원 안에 검정 아이콘 */
+.bottomnav__btn.is-active {
+  color: #fff;
+}
+
+.bottomnav__btn.is-active .bottomnav__iconwrap {
+  background: #fff;
+  color: var(--ink);
+}
+
+.bottomnav__label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #cfcfd4; /* 검정 바 위 흰색 계열 라벨 */
+  line-height: 1;
+}
+
+.bottomnav__btn.is-active .bottomnav__label {
+  color: #fff;
+}
