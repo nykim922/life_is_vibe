@@ -90,3 +90,48 @@
   gap: 10px;
   margin-top: 4px;
 }
+
+/* 관심 분야: 기본 토글 칩(미선택 상태 테두리) */
+.pform__chips .chip--toggle {
+  border-color: var(--line);
+}
+
+/* 관심 키워드 직접 추가 버튼 */
+.pform__chips .chip--add {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: #fff;
+  color: var(--purple-deep);
+  border: 1.5px dashed var(--purple);
+  cursor: pointer;
+}
+
+.pform__chips .chip--add:hover {
+  background: var(--purple-soft);
+}
+
+.chip__plus {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+/* 직접 추가 입력창 (칩 자리) */
+.pform__chip-input {
+  flex-shrink: 0;
+  padding: 9px 14px;
+  border-radius: var(--radius-pill);
+  border: 1.5px solid var(--purple);
+  background: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+  min-width: 140px;
+  outline: none;
+}
+
+.pform__chip-input::placeholder {
+  color: #a8a8ae;
+  font-weight: 500;
+}

@@ -1,10 +1,10 @@
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 import type { Goal, Interest, Profile } from '../data/types'
 import {
   GRADE_OPTIONS,
   GOAL_OPTIONS,
-  INTEREST_OPTIONS,
   MAJOR_OPTIONS,
+  getInterestsForMajor,
 } from '../data/options'
 import './ProfileForm.css'
 
@@ -22,16 +22,55 @@ export function ProfileForm({ initial, submitLabel, onSubmit, onCancel }: Props)
   const [goals, setGoals] = useState<Goal[]>(initial?.goals ?? [])
   const [context, setContext] = useState<string>(initial?.context ?? '')
 
+  // 직접 추가 키워드 입력 상태
+  const [adding, setAdding] = useState(false)
+  const [customInput, setCustomInput] = useState('')
+
+  // 화면에 보여줄 관심 키워드 칩:
+  // (선택 학과 추천 키워드) + (이미 선택했지만 추천 목록에 없는 커스텀 키워드)
+  const interestChips = useMemo(() => {
+    const recommended = getInterestsForMajor(major)
+    const extras = interests.filter((it) => !recommended.includes(it))
+    return [...recommended, ...extras]
+  }, [major, interests])
+
   const toggleInterest = (v: Interest) =>
     setInterests((cur) => (cur.includes(v) ? cur.filter((x) => x !== v) : [...cur, v]))
   const toggleGoal = (v: Goal) =>
     setGoals((cur) => (cur.includes(v) ? cur.filter((x) => x !== v) : [...cur, v]))
 
-  const canSubmit = interests.length > 0 && goals.length > 0
+  const addCustomInterest = () => {
+    const value = customInput.trim()
+    if (!value) {
+      setAdding(false)
+      setCustomInput('')
+      return
+    }
+    // 중복이면 선택만 보장, 아니면 추가하고 선택
+    setInterests((cur) => (cur.includes(value) ? cur : [...cur, value]))
+    setCustomInput('')
+    setAdding(false)
+  }
+
+  const handleCustomKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') {
+      e.preventDefault()
+      addCustomInterest()
+    } else if (e.key === 'Escape') {
+      setAdding(false)
+      setCustomInput('')
+    }
+  }
+
+  const hasPendingInterest = customInput.trim().length > 0
+  const canSubmit = (interests.length > 0 || hasPendingInterest) && goals.length > 0
 
   const submit = () => {
     if (!canSubmit) return
-    onSubmit({ major, grade, interests, goals, context: context.trim() })
+    const pending = customInput.trim()
+    const finalInterests =
+      pending && !interests.includes(pending) ? [...interests, pending] : interests
+    onSubmit({ major, grade, interests: finalInterests, goals, context: context.trim() })
   }
 
   return (
@@ -73,10 +112,10 @@ export function ProfileForm({ initial, submitLabel, onSubmit, onCancel }: Props)
 
       <div className="pform__field">
         <span className="pform__label">
-          관심 분야 <span className="pform__hint">복수 선택</span>
+          관심 분야 <span className="pform__hint">복수 선택 · 학과 추천</span>
         </span>
         <div className="pform__chips" role="group" aria-label="관심 분야 선택">
-          {INTEREST_OPTIONS.map((it) => (
+          {interestChips.map((it) => (
             <button
               key={it}
               type="button"
@@ -87,6 +126,29 @@ export function ProfileForm({ initial, submitLabel, onSubmit, onCancel }: Props)
               {it}
             </button>
           ))}
+
+          {adding ? (
+            <input
+              className="pform__chip-input"
+              type="text"
+              value={customInput}
+              autoFocus
+              maxLength={20}
+              placeholder="키워드 입력 후 Enter"
+              onChange={(e) => setCustomInput(e.target.value)}
+              onKeyDown={handleCustomKeyDown}
+              onBlur={addCustomInterest}
+            />
+          ) : (
+            <button
+              type="button"
+              className="chip chip--add"
+              aria-label="관심 키워드 직접 추가"
+              onClick={() => setAdding(true)}
+            >
+              <span className="chip__plus">+</span> 추가
+            </button>
+          )}
         </div>
       </div>
 
