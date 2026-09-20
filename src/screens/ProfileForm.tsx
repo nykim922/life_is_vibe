@@ -4,6 +4,7 @@ import {
   GRADE_OPTIONS,
   GOAL_OPTIONS,
   MAJOR_OPTIONS,
+  DAY_OPTIONS,
   getInterestsForMajor,
 } from '../data/options'
 import './ProfileForm.css'
@@ -21,6 +22,10 @@ export function ProfileForm({ initial, submitLabel, onSubmit, onCancel }: Props)
   const [interests, setInterests] = useState<Interest[]>(initial?.interests ?? [])
   const [goals, setGoals] = useState<Goal[]>(initial?.goals ?? [])
   const [context, setContext] = useState<string>(initial?.context ?? '')
+  // 참여 가능한 요일 (기본: 평일 월~금). 저장된 값이 있으면 그걸 사용.
+  const [availableDays, setAvailableDays] = useState<number[]>(
+    initial?.availableDays ?? [1, 2, 3, 4, 5],
+  )
 
   // 직접 추가 키워드 입력 상태
   const [adding, setAdding] = useState(false)
@@ -38,6 +43,8 @@ export function ProfileForm({ initial, submitLabel, onSubmit, onCancel }: Props)
     setInterests((cur) => (cur.includes(v) ? cur.filter((x) => x !== v) : [...cur, v]))
   const toggleGoal = (v: Goal) =>
     setGoals((cur) => (cur.includes(v) ? cur.filter((x) => x !== v) : [...cur, v]))
+  const toggleDay = (v: number) =>
+    setAvailableDays((cur) => (cur.includes(v) ? cur.filter((x) => x !== v) : [...cur, v]))
 
   const addCustomInterest = () => {
     const value = customInput.trim()
@@ -70,7 +77,7 @@ export function ProfileForm({ initial, submitLabel, onSubmit, onCancel }: Props)
     const pending = customInput.trim()
     const finalInterests =
       pending && !interests.includes(pending) ? [...interests, pending] : interests
-    onSubmit({ major, grade, interests: finalInterests, goals, context: context.trim() })
+    onSubmit({ major, grade, interests: finalInterests, goals, context: context.trim(), availableDays })
   }
 
   return (
@@ -105,6 +112,25 @@ export function ProfileForm({ initial, submitLabel, onSubmit, onCancel }: Props)
               onClick={() => setGrade(g)}
             >
               {g}학년
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div className="pform__field">
+        <span className="pform__label">
+          참여 가능한 요일 <span className="pform__hint">복수 선택 · 행사·설명회 추천에 반영</span>
+        </span>
+        <div className="pform__days" role="group" aria-label="참여 가능한 요일 선택">
+          {DAY_OPTIONS.map((d) => (
+            <button
+              key={d.value}
+              type="button"
+              className={`pform__day${availableDays.includes(d.value) ? ' is-on' : ''}`}
+              aria-pressed={availableDays.includes(d.value)}
+              onClick={() => toggleDay(d.value)}
+            >
+              {d.label}
             </button>
           ))}
         </div>

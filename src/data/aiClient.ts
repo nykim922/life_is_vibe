@@ -42,13 +42,16 @@ export async function recommendWithAi(
           goals: profile.goals,
           context: profile.context,
         },
-        notices: scored.map(({ notice }) => ({
+        notices: scored.map(({ notice, reasons, matchLevel }) => ({
           id: notice.id,
           title: notice.title,
           category: notice.category,
           interestTags: notice.interestTags,
           relatedGoals: notice.relatedGoals,
           deadline: notice.deadline,
+          // 규칙 기반으로 이미 찾아낸 근거를 힌트로 함께 전달
+          matchLevel,
+          ruleReasons: reasons,
         })),
       }),
     })
@@ -69,6 +72,7 @@ export async function recommendWithAi(
           notice: item.notice,
           score: ai ? 1000 - ai.priority : item.score,
           reasons: ai ? [ai.reason] : item.reasons,
+          matchLevel: item.matchLevel, // 규칙 기반 매칭 강도 유지
         }
       })
       .sort((a, b) => b.score - a.score)

@@ -54,6 +54,18 @@ export const MAJOR_OPTIONS: string[] = [
 
 export const GRADE_OPTIONS = [1, 2, 3, 4]
 
+// 요일 선택 옵션. value 는 JS Date.getDay() 기준(0=일 ~ 6=토), label 은 표시용.
+// 화면에는 월~일 순서로 보여준다.
+export const DAY_OPTIONS: Array<{ value: number; label: string }> = [
+  { value: 1, label: '월' },
+  { value: 2, label: '화' },
+  { value: 3, label: '수' },
+  { value: 4, label: '목' },
+  { value: 5, label: '금' },
+  { value: 6, label: '토' },
+  { value: 0, label: '일' },
+]
+
 export const CATEGORY_FILTERS: Array<'전체' | Category> = [
   '전체',
   '교육',
@@ -68,4 +80,5 @@ export const EXAMPLE_PROFILE = {
   interests: ['반도체', '공정·장비'] as Interest[],
   goals: ['직무 탐색', '교육 수강'] as Goal[],
   context: '학기 중이라 주말이나 온라인 프로그램을 선호해요.',
+  availableDays: [1, 2, 3, 4, 5], // 평일(월~금)
 }

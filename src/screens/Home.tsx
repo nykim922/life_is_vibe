@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useStore } from '../store'
 import { useToast } from '../components/Toast'
-import { recommend, type ScoredNotice } from '../data/recommend'
+import { recommend, isNoticeOnBlockedDay, type ScoredNotice } from '../data/recommend'
 import { recommendWithAi } from '../data/aiClient'
 import { CATEGORY_FILTERS } from '../data/options'
 import { isWeekend } from '../data/dates'
@@ -17,6 +17,7 @@ export interface HomeUiState {
   online: boolean
   free: boolean
   weekend: boolean
+  showBlockedDays: boolean // 참여 불가 요일 일정도 보기
   sort: Sort
   scrollTop: number
 }
@@ -26,6 +27,7 @@ const DEFAULT_UI: HomeUiState = {
   online: false,
   free: false,
   weekend: false,
+  showBlockedDays: false,
   sort: 'recommended',
   scrollTop: 0,
 }
@@ -100,6 +102,10 @@ export function Home({ onOpenDetail, onEditProfile, ui, onUiChange }: Props) {
 
   const filtered = useMemo(() => {
     let list = baseList
+    // 참여 불가 요일에 걸리는 행사/설명회는 기본 숨김 (체크박스로 보이기 가능)
+    if (!u.showBlockedDays) {
+      list = list.filter((s) => !isNoticeOnBlockedDay(s.notice, profile))
+    }
     if (u.category !== '전체') list = list.filter((s) => s.notice.category === u.category)
     if (u.online) list = list.filter((s) => s.notice.online)
     if (u.free) list = list.filter((s) => s.notice.cost === 'free')
@@ -115,7 +121,7 @@ export function Home({ onOpenDetail, onEditProfile, ui, onUiChange }: Props) {
       })
     }
     return list
-  }, [baseList, u])
+  }, [baseList, u, profile])
 
   const summary = `${profile.major} · ${profile.grade}학년 · ${
     profile.interests.slice(0, 2).join(', ') || '관심분야 미설정'
@@ -182,7 +188,19 @@ export function Home({ onOpenDetail, onEditProfile, ui, onUiChange }: Props) {
         >
           주말만
         </button>
-        <span className="home__sep" aria-hidden="true" />
+        {profile.availableDays && profile.availableDays.length > 0 && (
+          <button
+            className={`chip chip--toggle${u.showBlockedDays ? ' is-on' : ''}`}
+            aria-pressed={u.showBlockedDays}
+            onClick={() => set({ showBlockedDays: !u.showBlockedDays })}
+          >
+            안 되는 요일도
+          </button>
+        )}
+      </div>
+
+      {/* 정렬 */}
+      <div className="chiprow home__sorts">
         <button
           className={`chip${u.sort === 'recommended' ? ' is-on' : ''}`}
           aria-pressed={u.sort === 'recommended'}

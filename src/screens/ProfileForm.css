@@ -135,3 +135,27 @@
   color: #a8a8ae;
   font-weight: 500;
 }
+
+/* 참여 가능한 요일 선택 (7개 한 줄) */
+.pform__days {
+  display: flex;
+  gap: 6px;
+}
+
+.pform__day {
+  flex: 1;
+  padding: 12px 0;
+  border-radius: 12px;
+  background: #fff;
+  border: 1.5px solid var(--line);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+
+.pform__day.is-on {
+  background: var(--purple-soft);
+  border-color: var(--purple);
+  color: var(--purple-deep);
+}

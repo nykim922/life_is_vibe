@@ -15,6 +15,8 @@ export interface Profile {
   interests: Interest[]
   goals: Goal[]
   context: string // 자유 입력 맥락
+  // 참여 가능한 요일 (0=일 ~ 6=토). 비었거나 없으면 요일 제한 없음.
+  availableDays?: number[]
 }
 
 /**
