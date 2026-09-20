@@ -27,7 +27,14 @@ type Row =
   | { type: 'google'; item: GoogleEvent; time: number }
 
 export function Schedule() {
-  const { state, googleEvents, connectGoogle, refreshGoogle, removeSchedule } = useStore()
+  const {
+    state,
+    googleEvents,
+    demoGoogleConnected,
+    connectDemoGoogle,
+    refreshDemoGoogle,
+    removeSchedule,
+  } = useStore()
   const toast = useToast()
 
   const [weekStart, setWeekStart] = useState(() => startOfWeek(new Date()))
@@ -123,34 +130,35 @@ export function Schedule() {
         })}
       </div>
 
-      {/* 구글 캘린더 데모 연결 */}
-      {!state.googleConnected ? (
+      {/* 구글 캘린더 예시 미리보기 (데모 · 실제 구글 계정 조회 아님) */}
+      {!demoGoogleConnected ? (
         <div className="sched__connect">
           <div className="sched__connect-icon">
             <CalendarIcon size={22} />
           </div>
-          <p className="sched__connect-title">구글 캘린더 데모 연결</p>
+          <p className="sched__connect-title">예시 일정 미리보기 (데모)</p>
           <p className="sched__connect-desc">
-            연결하면 예시 수업·약속 일정을 불러와 추천 일정과 함께 볼 수 있어요.
+            추천 일정과 어떻게 함께 보이는지 확인하는 예시예요. 실제 구글 캘린더 일정을 불러오지는
+            않아요. (내가 추가한 일정은 실제로 구글 캘린더에 저장됩니다.)
           </p>
           <button
-            className="btn btn--primary btn--block"
+            className="btn btn--line btn--block"
             onClick={() => {
-              connectGoogle()
-              toast.show('데모 캘린더를 연결했어요')
+              connectDemoGoogle()
+              toast.show('예시 일정을 표시했어요')
             }}
           >
-            구글 캘린더 데모 연결하기
+            예시 일정 표시하기
           </button>
         </div>
       ) : (
         <div className="sched__status">
-          <span className="badge badge--green">데모 연결됨</span>
-          <span className="sched__status-note">실제 구글 계정에는 접근하지 않았어요</span>
+          <span className="badge">예시 표시 중</span>
+          <span className="sched__status-note">아래 '구글 캘린더 예시'는 데모 데이터예요</span>
           <button
             className="sched__refresh"
             onClick={() => {
-              refreshGoogle()
+              refreshDemoGoogle()
               toast.show('예시 일정을 새로고침했어요')
             }}
           >
@@ -184,8 +192,7 @@ export function Schedule() {
                   </div>
                   <div className="sched__body">
                     <div className="sched__badges">
-                      <span className="badge">기존 일정</span>
-                      <span className="badge">구글 캘린더 예시</span>
+                      <span className="badge">구글 캘린더 예시 (데모)</span>
                     </div>
                     <p className="sched__title">{g.title}</p>
                     {g.location && (
@@ -219,7 +226,11 @@ export function Schedule() {
                     <span className={`badge ${isDeadline ? 'badge--soon' : 'badge--purple'}`}>
                       {isDeadline ? '신청 마감' : '행사 참석'}
                     </span>
-                    <span className="badge">서비스에서 추가</span>
+                    {it.googleEventId ? (
+                      <span className="badge badge--green">구글 캘린더 저장됨</span>
+                    ) : (
+                      <span className="badge">서비스에서 추가</span>
+                    )}
                     {it.notify !== 'none' && (
                       <span className="badge">
                         알림 {it.notify === 'hour' ? '1시간 전' : '하루 전'}
@@ -237,14 +248,35 @@ export function Schedule() {
                       <ClockIcon size={14} /> 시간 미정 · 날짜 기준
                     </p>
                   )}
+                  {it.googleHtmlLink && (
+                    <a
+                      className="sched__gcal-link"
+                      href={it.googleHtmlLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      구글 캘린더에서 열기
+                    </a>
+                  )}
                 </div>
                 <button
                   className="sched__del"
                   onClick={() => {
+                    // 앱 내부 기록만 삭제. 구글 캘린더의 실제 이벤트는 그대로 유지됨.
+                    const ok = it.googleEventId
+                      ? window.confirm(
+                          '앱 목록에서만 제거할까요?\n구글 캘린더에 저장된 실제 일정은 삭제되지 않고 그대로 남아요.',
+                        )
+                      : true
+                    if (!ok) return
                     removeSchedule(it.id)
-                    toast.show('일정을 삭제했어요')
+                    toast.show(
+                      it.googleEventId
+                        ? '앱 목록에서 제거했어요 (구글 캘린더 일정은 유지)'
+                        : '일정을 삭제했어요',
+                    )
                   }}
-                  aria-label="일정 삭제"
+                  aria-label="앱 목록에서 제거"
                 >
                   <TrashIcon size={17} />
                 </button>

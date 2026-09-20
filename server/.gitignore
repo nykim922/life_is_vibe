@@ -1,0 +1,14 @@
+node_modules
+dist
+*.log
+
+# env & secrets
+.env
+.env.local
+
+# 세션/토큰 로컬 저장소
+data
+*.db
+*.db-journal
+*.db-wal
+*.db-shm

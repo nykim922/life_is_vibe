@@ -6,7 +6,7 @@ import { UserIcon, EditIcon } from '../components/icons'
 import './ProfileScreen.css'
 
 export function ProfileScreen() {
-  const { state, updateProfile, resetHidden, resetAll } = useStore()
+  const { state, auth, updateProfile, resetHidden, resetAll, logout } = useStore()
   const toast = useToast()
   const profile = state.profile!
   const [editing, setEditing] = useState(false)
@@ -34,7 +34,7 @@ export function ProfileScreen() {
   const confirmReset = () => {
     if (
       window.confirm(
-        '전체 데모를 초기화할까요? 프로필, 저장, 숨김, 일정, 캘린더 연결이 모두 지워집니다.',
+        '앱 데이터를 초기화할까요? 프로필, 저장, 숨김, 앱 내 일정 기록이 지워집니다.\n(이미 구글 캘린더에 저장된 실제 일정은 삭제되지 않아요.)',
       )
     ) {
       resetAll()
@@ -103,13 +103,23 @@ export function ProfileScreen() {
         <div className="pscreen__settings">
           <div className="pscreen__setting">
             <div>
-              <p className="pscreen__setting-title">구글 캘린더 데모 연결</p>
+              <p className="pscreen__setting-title">구글 계정</p>
+              <p className="pscreen__setting-sub">{auth.email ?? '로그인 정보 없음'}</p>
+            </div>
+            <span className="badge badge--green">로그인됨</span>
+          </div>
+
+          <div className="pscreen__setting">
+            <div>
+              <p className="pscreen__setting-title">구글 캘린더 권한</p>
               <p className="pscreen__setting-sub">
-                {state.googleConnected ? '데모 연결됨' : '연결 안 됨'}
+                {auth.calendarConnected
+                  ? '일정 생성 권한 있음'
+                  : '권한 없음 (다시 로그인 필요)'}
               </p>
             </div>
-            <span className={`badge ${state.googleConnected ? 'badge--green' : ''}`}>
-              {state.googleConnected ? '연결됨' : '미연결'}
+            <span className={`badge ${auth.calendarConnected ? 'badge--green' : ''}`}>
+              {auth.calendarConnected ? '연결됨' : '미연결'}
             </span>
           </div>
 
@@ -129,18 +139,38 @@ export function ProfileScreen() {
           </button>
 
           <button
+            className="pscreen__setting pscreen__setting--btn"
+            onClick={async () => {
+              await logout()
+              toast.show('로그아웃했어요')
+            }}
+          >
+            <div>
+              <p className="pscreen__setting-title">로그아웃</p>
+              <p className="pscreen__setting-sub">
+                프로필·저장·일정 데이터는 지우지 않고 로그인만 해제합니다
+              </p>
+            </div>
+          </button>
+
+          <button
             className="pscreen__setting pscreen__setting--btn pscreen__setting--danger"
             onClick={confirmReset}
           >
             <div>
-              <p className="pscreen__setting-title">전체 데모 초기화</p>
-              <p className="pscreen__setting-sub">프로필과 저장 상태를 모두 지웁니다</p>
+              <p className="pscreen__setting-title">앱 데이터 초기화</p>
+              <p className="pscreen__setting-sub">
+                프로필·저장·앱 내 일정 기록을 지웁니다 (구글 캘린더 일정은 유지)
+              </p>
             </div>
           </button>
         </div>
 
         <div className="demo-note pscreen__demo">
-          <span>이 앱은 데모예요. 실제 로그인·AI·크롤링·캘린더 연동 없이 동작합니다.</span>
+          <span>
+            로그인과 일정 저장은 실제 구글 캘린더에 연동돼요. 추천/AI 및 예시 캘린더 표시는 데모
+            데이터로 동작합니다.
+          </span>
         </div>
       </div>
     </div>

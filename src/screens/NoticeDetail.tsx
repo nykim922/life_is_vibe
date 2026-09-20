@@ -20,7 +20,7 @@ interface Props {
 }
 
 export function NoticeDetail({ noticeId, onBack, onGoSchedule }: Props) {
-  const { notices, state, isSaved, toggleSave } = useStore()
+  const { notices, state, isSaved, toggleSave, demoGoogleConnected } = useStore()
   const toast = useToast()
   const notice = notices.find((n) => n.id === noticeId)
   const profile = state.profile!
@@ -154,12 +154,12 @@ export function NoticeDetail({ noticeId, onBack, onGoSchedule }: Props) {
           </dl>
         </section>
 
-        {/* 일정 충돌 안내 */}
+        {/* 일정 추가 안내 */}
         <div className="demo-note detail__demo">
           <span>
-            {state.googleConnected
-              ? '일정에 추가할 때 기존 구글 일정과 겹치는지 확인해 드려요.'
-              : '구글 캘린더 데모를 연결하면 기존 일정과 겹치는지 비교해 드려요.'}
+            {demoGoogleConnected
+              ? '일정에 추가하면 내 구글 캘린더에 저장돼요. (예시 일정과 겹치는지도 참고로 안내해 드려요.)'
+              : '일정에 추가하면 내 구글 캘린더에 바로 저장돼요.'}
           </span>
         </div>
 

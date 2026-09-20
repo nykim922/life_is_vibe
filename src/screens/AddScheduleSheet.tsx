@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { useStore } from '../store'
+import { useStore, type AddScheduleOutcome } from '../store'
 import { useToast } from '../components/Toast'
 import { Sheet } from '../components/Sheet'
 import type { Notice, NotifyOption, ScheduleKind } from '../data/types'
@@ -17,7 +17,7 @@ interface Props {
 type KindChoice = 'deadline' | 'event' | 'both'
 
 export function AddScheduleSheet({ notice, open, onClose, onGoSchedule }: Props) {
-  const { addSchedule, hasSchedule, googleEvents } = useStore()
+  const { addSchedule, hasSchedule, googleEvents, demoGoogleConnected } = useStore()
   const toast = useToast()
 
   const hasDeadline = Boolean(notice.deadline)
@@ -26,25 +26,24 @@ export function AddScheduleSheet({ notice, open, onClose, onGoSchedule }: Props)
   const deadlineAdded = hasSchedule(notice.id, 'deadline')
   const eventAdded = hasSchedule(notice.id, 'event')
 
-  // 선택 가능한 기본값 결정
   const initialChoice: KindChoice = hasEvent && !eventAdded ? 'event' : 'deadline'
   const [choice, setChoice] = useState<KindChoice>(initialChoice)
   const [notify, setNotify] = useState<NotifyOption>('day')
-  const [done, setDone] = useState(false)
+  const [submitting, setSubmitting] = useState(false)
+  const [outcome, setOutcome] = useState<AddScheduleOutcome | null>(null)
 
-  // 행사 시간 정보가 없으면 '1시간 전' 알림 비활성 (날짜 기준 알림만)
   const eventHasTime = notice.eventHasTime
   const notifyDisabledHour =
     (choice === 'event' && !eventHasTime) ||
     (choice === 'deadline' && !notice.deadlineHasTime)
 
-  // 일정 충돌 검사: 행사(시간 있음) vs 구글 일정
+  // 데모 예시 일정과의 겹침 안내 (실제 구글 일정 조회가 아님 — 데모 표시)
   const conflicts = useMemo(() => {
-    if (!hasEvent || !eventHasTime || !notice.eventStart) return []
+    if (!demoGoogleConnected || !hasEvent || !eventHasTime || !notice.eventStart) return []
     return googleEvents.filter((g) =>
       overlaps(notice.eventStart!, notice.eventEnd, g.start, g.end),
     )
-  }, [googleEvents, hasEvent, eventHasTime, notice])
+  }, [googleEvents, demoGoogleConnected, hasEvent, eventHasTime, notice])
 
   const willAddEvent = choice === 'event' || choice === 'both'
   const showConflict = willAddEvent && conflicts.length > 0
@@ -57,17 +56,29 @@ export function AddScheduleSheet({ notice, open, onClose, onGoSchedule }: Props)
     k === 'deadline' ? !deadlineAdded : !eventAdded,
   )
 
-  const canSubmit = effectiveKinds.length > 0
+  const canSubmit = effectiveKinds.length > 0 && !submitting
 
-  const submit = () => {
+  const submit = async () => {
+    if (submitting || effectiveKinds.length === 0) return // 중복 클릭 방지
     let notifyToUse = notify
     if (notifyDisabledHour && notify === 'hour') notifyToUse = 'day'
-    effectiveKinds.forEach((k) => addSchedule(notice, k, notifyToUse))
-    setDone(true)
+
+    setSubmitting(true)
+    try {
+      const res = await addSchedule(notice, effectiveKinds, notifyToUse)
+      setOutcome(res)
+      if (res.ok) {
+        toast.show('구글 캘린더에 저장했어요')
+      } else {
+        toast.show(res.error ?? '저장에 실패했어요')
+      }
+    } finally {
+      setSubmitting(false)
+    }
   }
 
   const close = () => {
-    setDone(false)
+    setOutcome(null)
     setChoice(initialChoice)
     setNotify('day')
     onClose()
@@ -76,15 +87,53 @@ export function AddScheduleSheet({ notice, open, onClose, onGoSchedule }: Props)
   const kindLabel = (k: KindChoice) =>
     k === 'deadline' ? '신청 마감' : k === 'event' ? '행사 일정' : '둘 다'
 
+  const done = outcome?.ok === true
+
   return (
     <Sheet open={open} title="일정에 추가" onClose={close}>
-      {done ? (
+      {done && outcome?.result ? (
         <div className="ash-done">
           <div className="ash-done__icon">
             <CheckIcon size={28} strokeWidth={2.6} />
           </div>
-          <p className="ash-done__title">데모 일정에 추가했어요</p>
-          <p className="ash-done__desc">등록 완료. 내 일정에서 확인할 수 있어요.</p>
+          <p className="ash-done__title">구글 캘린더에 저장했어요</p>
+          <p className="ash-done__desc">
+            {outcome.result.created.some((c) => c.duplicate)
+              ? '이미 추가된 일정이 있어 중복 없이 반영했어요.'
+              : '내 구글 캘린더 primary 일정에 추가됐어요.'}
+          </p>
+
+          {/* 생성된 각 이벤트의 구글 캘린더 열기 링크 */}
+          <div className="ash-done__links">
+            {outcome.result.created.map((c) => (
+              <a
+                key={c.eventId}
+                className="btn btn--line btn--block"
+                href={c.htmlLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {c.kind === 'deadline' ? '신청 마감 일정' : '행사 일정'} 구글 캘린더에서 열기
+              </a>
+            ))}
+          </div>
+
+          {/* 기본 길이 적용 안내 (종료 시각 미상) */}
+          {outcome.result.created.some((c) => c.appliedDefaultDuration) && (
+            <p className="ash__hint">
+              종료 시각 정보가 없어 기본 1시간 길이로 저장했어요. 필요하면 구글 캘린더에서 조정해 주세요.
+            </p>
+          )}
+
+          {/* 생성하지 못한 항목 안내 */}
+          {outcome.result.skipped.length > 0 && (
+            <p className="ash__hint">
+              {outcome.result.skipped
+                .map((s) => `${s.kind === 'deadline' ? '신청 마감' : '행사'}: ${s.reason}`)
+                .join(' / ')}
+            </p>
+          )}
+
           <div className="ash-done__actions">
             <button className="btn btn--ghost" onClick={close}>
               닫기
@@ -122,7 +171,7 @@ export function AddScheduleSheet({ notice, open, onClose, onGoSchedule }: Props)
                   key={k}
                   className={`ash__choice${choice === k ? ' is-on' : ''}`}
                   aria-pressed={choice === k}
-                  disabled={disabled}
+                  disabled={disabled || submitting}
                   onClick={() => setChoice(k)}
                 >
                   <span className="ash__choice-title">{kindLabel(k)}</span>
@@ -145,7 +194,7 @@ export function AddScheduleSheet({ notice, open, onClose, onGoSchedule }: Props)
               { v: 'hour', label: '1시간 전' },
               { v: 'day', label: '하루 전' },
             ] as Array<{ v: NotifyOption; label: string }>).map((o) => {
-              const disabled = o.v === 'hour' && notifyDisabledHour
+              const disabled = (o.v === 'hour' && notifyDisabledHour) || submitting
               return (
                 <button
                   key={o.v}
@@ -168,7 +217,7 @@ export function AddScheduleSheet({ notice, open, onClose, onGoSchedule }: Props)
             <div className="ash__conflict">
               <AlertIcon size={18} />
               <div>
-                <strong>기존 일정과 겹쳐요</strong>
+                <strong>예시 일정과 겹쳐요</strong>
                 <ul>
                   {conflicts.map((c) => (
                     <li key={c.id}>
@@ -176,24 +225,32 @@ export function AddScheduleSheet({ notice, open, onClose, onGoSchedule }: Props)
                     </li>
                   ))}
                 </ul>
-                <span>확인 후에도 추가할 수 있어요.</span>
+                <span>데모 예시 일정 기준 안내예요. 확인 후에도 추가할 수 있어요.</span>
               </div>
             </div>
           )}
 
-          <div className="demo-note ash__demo">
-            <span>실제 알림은 발송되지 않는 데모예요. 선택값만 저장됩니다.</span>
-          </div>
+          {/* 저장 실패 안내 (성공으로 표시하지 않음) */}
+          {outcome && outcome.ok === false && (
+            <div className="ash__conflict">
+              <AlertIcon size={18} />
+              <div>
+                <strong>저장하지 못했어요</strong>
+                <span>{outcome.error ?? '잠시 후 다시 시도해 주세요.'}</span>
+              </div>
+            </div>
+          )}
 
           <button
             className="btn btn--primary btn--block ash__submit"
-            onClick={() => {
-              submit()
-              toast.show('데모 일정에 추가했어요')
-            }}
+            onClick={submit}
             disabled={!canSubmit}
           >
-            {canSubmit ? '이 일정 추가하기' : '추가할 수 있는 항목이 없어요'}
+            {submitting
+              ? '구글 캘린더에 저장 중…'
+              : canSubmit
+                ? '이 일정 추가하기'
+                : '추가할 수 있는 항목이 없어요'}
           </button>
         </>
       )}

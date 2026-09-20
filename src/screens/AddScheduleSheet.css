@@ -118,3 +118,12 @@
   display: flex;
   gap: 10px;
 }
+
+/* 생성된 구글 캘린더 이벤트 링크 목록 */
+.ash-done__links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  margin: 0 0 14px;
+}
