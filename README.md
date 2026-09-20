@@ -99,3 +99,57 @@ src/
 ```
 
 실제 API(로그인·AI·크롤링·구글 캘린더)를 나중에 붙이기 쉽도록, 예시 데이터와 데이터 처리 함수는 `src/data/`에 모아 UI와 분리했습니다.
+
+---
+
+## 6. (nykim 브랜치) 실제 Google 로그인 · Calendar 연동 백엔드
+
+`nykim` 브랜치에는 데모를 넘어 **실제 Google OAuth 로그인**과 **Google Calendar 일정 생성**을
+처리하는 백엔드(Node.js + Express + TypeScript)가 추가되었습니다. 프론트엔드 UI/공지 데이터/
+일정 선택 화면은 그대로 유지됩니다.
+
+### 폴더 구조 (추가분)
+
+```
+server/                 백엔드 (Express + TypeScript)
+  src/
+    index.ts            앱 진입점 (127.0.0.1:8787 내부 전용)
+    config.ts           환경변수 / OAuth scope
+    session.ts          파일 기반 세션 (MemoryStore 아님)
+    middleware/         requireAuth
+    google/             oauthClient · userInfo · calendar (googleapis)
+    notices/            datetime(KST) · repository(공지 검증, src/data/notices.data.json 재사용)
+    calendar/           buildEvent (일정 유형/날짜 규칙)
+    store/              tokenStore (토큰·생성이력 JSON 저장, 토큰 암호화)
+    routes/             auth · calendar
+  .env.example          백엔드 환경변수 예시
+deploy/
+  nginx.conf.example        Nginx 리버스 프록시 + SPA fallback + HTTPS
+  campus-secretary.service  systemd 서비스 (재시작 자동 실행)
+  DEPLOY.md                 EC2 배포 가이드 (단계별)
+```
+
+### 로컬에서 함께 실행하기
+
+```powershell
+# 1) 백엔드 (터미널 A)
+cd server
+npm install
+# server/.env 를 .env.example 보고 작성 (Google 자격증명 없으면 로그인만 비활성)
+npm run dev            # http://127.0.0.1:8787
+
+# 2) 프론트엔드 (터미널 B)
+npm run dev            # http://localhost:5173  (/api 는 8787 으로 자동 프록시)
+```
+
+- 프론트엔드 `/api` 요청은 Vite 프록시가 백엔드(8787)로 전달합니다. (운영에선 Nginx 가 담당)
+- **Google Cloud 자격증명이 없으면** 로그인 버튼은 비활성화되고, 그 외 화면은 정상 동작합니다.
+- 실제 로그인·캘린더 저장은 Google Cloud 설정 + HTTPS 도메인 준비 후 동작합니다. 자세한 내용은
+  `deploy/DEPLOY.md` 를 참고하세요.
+
+### 데모와 실제의 구분
+
+- **실제 연동**: 구글 로그인(서버 세션), 공지 일정을 내 구글 캘린더 primary 에 생성.
+- **여전히 데모**: "내 일정" 화면의 *예시 일정 미리보기*(구글 캘린더 예시 데이터), 추천/AI, 알림 발송.
+- 앱은 실제 저장에 성공한 경우에만 성공 메시지를 표시하며, 저장된 일정은 "구글 캘린더에서 열기"
+  링크를 제공합니다. 앱에서 일정을 삭제해도 **구글 캘린더의 실제 일정은 삭제되지 않습니다.**

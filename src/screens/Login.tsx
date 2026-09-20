@@ -26,16 +26,17 @@ function GoogleLogo({ size = 20 }: { size?: number }) {
 }
 
 export function Login() {
-  const { loginWithGoogle } = useStore()
+  const { loginWithGoogle, auth } = useStore()
+
+  const notConfigured = !auth.googleConfigured
 
   return (
     <div className="login">
       <div className="login__hero">
-        <span className="demo-pill">데모</span>
         <h1 className="login__brand">캠퍼스 비서</h1>
         <p className="login__lead">
           구글 계정으로 로그인하면
-          <br />내 캘린더와 일정이 자동으로 연동돼요.
+          <br />추천 일정을 내 캘린더에 바로 담을 수 있어요.
         </p>
       </div>
 
@@ -44,20 +45,29 @@ export function Login() {
           type="button"
           className="google-btn"
           onClick={() => loginWithGoogle()}
+          disabled={notConfigured}
+          title={notConfigured ? '서버에 Google 로그인 설정이 필요해요' : undefined}
         >
           <GoogleLogo size={20} />
           <span>구글로 로그인하기</span>
         </button>
 
         <ul className="login__benefits">
-          <li>내 구글 캘린더 일정을 불러와요</li>
-          <li>추천 일정을 캘린더에 바로 담아요</li>
-          <li>기존 수업과 겹치면 알려줘요</li>
+          <li>추천 일정을 구글 캘린더에 바로 저장해요</li>
+          <li>신청 마감·행사 일정을 함께 담을 수 있어요</li>
+          <li>알림(1시간 전·하루 전)도 함께 설정해요</li>
         </ul>
 
-        <p className="login__note">
-          * 데모 버전입니다. 실제 구글 인증은 배포 후 연결됩니다.
-        </p>
+        {notConfigured ? (
+          <p className="login__note">
+            * 현재 서버에 Google 로그인 정보가 설정되지 않았어요. 배포 시 환경변수를 등록하면
+            실제 로그인이 활성화됩니다.
+          </p>
+        ) : (
+          <p className="login__note">
+            * 로그인 시 구글 계정 정보와 캘린더 일정 생성 권한을 요청해요.
+          </p>
+        )}
       </div>
     </div>
   )

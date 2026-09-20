@@ -232,3 +232,16 @@
   justify-content: center;
   flex-shrink: 0;
 }
+
+/* 실제 구글 캘린더 이벤트 열기 링크 */
+.sched__gcal-link {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--brand, #6b4eff);
+  text-decoration: none;
+}
+.sched__gcal-link:hover {
+  text-decoration: underline;
+}

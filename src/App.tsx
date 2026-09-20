@@ -16,13 +16,28 @@ type View =
   | { name: 'detail'; noticeId: string; from: Tab }
 
 function Shell() {
-  const { state } = useStore()
+  const { state, auth } = useStore()
   const [view, setView] = useState<View>({ name: 'tab', tab: 'home' })
   // 홈 필터/스크롤 상태를 상세를 오가도 유지하기 위해 상위에서 보관
   const [homeState, setHomeState] = useState<import('./screens/Home').HomeUiState | null>(null)
 
-  // 1) 로그인 전에는 로그인 화면만 (하단 탭 숨김)
-  if (!state.loggedIn) {
+  // 0) 서버 세션 복원 중에는 로딩 화면 (localStorage 값만으로 로그인 판단하지 않음)
+  if (auth.status === 'loading') {
+    return (
+      <div className="app-frame">
+        <div className="screen-scroll no-nav">
+          <div className="auth-loading">
+            <div className="auth-loading__spinner" aria-hidden="true" />
+            <p className="auth-loading__text">로그인 상태를 확인하고 있어요…</p>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
+  // Google OAuth가 설정된 환경에서만 로그인을 필수로 요구한다.
+  // 설정 전/백엔드 장애 시에는 기존 추천 앱을 게스트 모드로 유지한다.
+  if (auth.status !== 'authenticated' && auth.googleConfigured) {
     return (
       <div className="app-frame">
         <div className="screen-scroll no-nav">

@@ -75,7 +75,7 @@ export interface Notice extends NoticeSeed {
 export type ScheduleKind = 'deadline' | 'event'
 export type NotifyOption = 'none' | 'hour' | 'day'
 
-/** 서비스에서 추가한 일정 */
+/** 서비스에서 추가한 일정 (실제 Google Calendar 에 생성됨) */
 export interface ScheduleItem {
   id: string // `${noticeId}:${kind}`
   noticeId: string
@@ -89,6 +89,9 @@ export interface ScheduleItem {
   notify: NotifyOption
   origin: 'service'
   createdAt: string
+  // 실제 Google Calendar 연동 결과
+  googleEventId?: string
+  googleHtmlLink?: string
 }
 
 /** 구글 캘린더 데모(읽기 전용) 일정 */
@@ -102,14 +105,28 @@ export interface GoogleEvent {
   origin: 'google'
 }
 
+/**
+ * localStorage 에 저장되는 앱 데이터.
+ * 주의: 로그인/캘린더 권한 여부는 여기(localStorage)로 판단하지 않는다.
+ * 실제 인증 상태는 서버(/api/auth/me)에서만 검증한다. (AuthSlice 참고)
+ * profile/saved/hidden/schedule 등 사용자 데이터만 로컬에 보존한다.
+ */
 export interface AppState {
-  loggedIn: boolean // 구글 로그인 완료 여부
-  userEmail: string | null // 로그인한 구글 계정 (데모에서는 표시용)
   profile: Profile | null
   onboarded: boolean
   savedIds: string[]
   hiddenIds: string[]
   scheduleItems: ScheduleItem[]
-  googleConnected: boolean
-  firstRunDate: string | null // ISO (날짜만 사용)
+  firstRunDate: string | null // ISO (날짜만 사용). 데모 예시 계산에만 쓰임.
+}
+
+/** 서버에서 검증한 인증 상태 (localStorage 아님) */
+export interface AuthSlice {
+  status: 'loading' | 'authenticated' | 'unauthenticated'
+  email: string | null
+  name: string | null
+  // 실제 Google Calendar 이벤트 생성 권한(calendar.events scope) 보유 여부
+  calendarConnected: boolean
+  // 서버에 Google OAuth 자격증명이 구성되어 실제 로그인이 가능한지
+  googleConfigured: boolean
 }
