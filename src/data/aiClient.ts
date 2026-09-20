@@ -17,6 +17,7 @@ export type AiRecommendResult = {
 }
 
 const REQUEST_TIMEOUT_MS = 40000
+const AI_CANDIDATE_LIMIT = 50
 
 export async function recommendWithAi(
   scored: ScoredNotice[],
@@ -30,6 +31,7 @@ export async function recommendWithAi(
     const controller = new AbortController()
     const timer = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS)
 
+    const candidates = scored.slice(0, AI_CANDIDATE_LIMIT)
     const res = await fetch('/api/recommend', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -42,7 +44,7 @@ export async function recommendWithAi(
           goals: profile.goals,
           context: profile.context,
         },
-        notices: scored.map(({ notice }) => ({
+        notices: candidates.map(({ notice }) => ({
           id: notice.id,
           title: notice.title,
           category: notice.category,
@@ -51,8 +53,7 @@ export async function recommendWithAi(
           deadline: notice.deadline,
         })),
       }),
-    })
-    clearTimeout(timer)
+    }).finally(() => clearTimeout(timer))
 
     if (!res.ok) throw new Error(`서버 응답 오류: ${res.status}`)
     const data = (await res.json()) as ApiResponse

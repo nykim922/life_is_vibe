@@ -1,5 +1,5 @@
 import type { Notice, Category, Interest, Goal } from './types'
-import rawData from './notices.data.json'
+import rawData from '../../notices.logic.2.json'
 
 // ===== 팀 실데이터(notices.logic.json) → 앱 Notice 형식 변환 =====
 // 팀이 제공한 국민대 공지 JSON을 화면에서 바로 쓰는 Notice 로 바꿉니다.
@@ -113,33 +113,45 @@ function mapMajors(raw: RawNotice): string[] {
   return []
 }
 
-// 마감일 결정: applyPeriod.end 우선, 없으면 deadlineDates[0]
-function pickDeadline(raw: RawNotice): string | null {
-  const end = raw.applyPeriod?.end
-  if (end) return new Date(end).toISOString()
-  const dd = raw.deadlineDates?.[0]
-  if (dd) return new Date(dd).toISOString()
-  return null
+type ParsedDate = {
+  iso: string | null
+  hasTime: boolean
 }
 
-// 첫 번째 행사 일정 추출
+function parseDate(raw: string | null | undefined): ParsedDate {
+  if (!raw) return { iso: null, hasTime: false }
+  const time = Date.parse(raw)
+  if (!Number.isFinite(time)) return { iso: null, hasTime: false }
+  const match = raw.match(/T(\d{2}):(\d{2})/)
+  const hasTime = Boolean(match && (match[1] !== '00' || match[2] !== '00'))
+  return { iso: new Date(time).toISOString(), hasTime }
+}
+
+// 마감일 결정: 유효한 applyPeriod.end 우선, 없으면 유효한 deadlineDates 값
+function pickDeadline(raw: RawNotice): ParsedDate {
+  const candidates = [raw.applyPeriod?.end, ...(raw.deadlineDates ?? [])]
+  for (const candidate of candidates) {
+    const parsed = parseDate(candidate)
+    if (parsed.iso) return parsed
+  }
+  return { iso: null, hasTime: false }
+}
+
+// 잘못된 날짜가 섞여 있어도 첫 번째 유효한 행사만 선택
 function pickEvent(raw: RawNotice): {
   start: string | null
   end: string | null
   hasTime: boolean
   note?: string
 } {
-  const ev = raw.events?.[0]
-  if (!ev || !ev.startAt) {
-    return { start: null, end: null, hasTime: false }
-  }
-  const start = new Date(ev.startAt).toISOString()
-  const end = ev.endAt ? new Date(ev.endAt).toISOString() : null
-  // startAt 에 시각 정보가 있는지 (자정 00:00 이면 시간 미정으로 간주)
-  const d = new Date(ev.startAt)
-  const hasTime = !(d.getHours() === 0 && d.getMinutes() === 0)
-  const note = raw.events && raw.events.length > 1 ? `외 ${raw.events.length - 1}개 일정` : undefined
-  return { start, end, hasTime, note }
+  const events = raw.events ?? []
+  const ev = events.find((item) => parseDate(item?.startAt).iso)
+  if (!ev?.startAt) return { start: null, end: null, hasTime: false }
+
+  const start = parseDate(ev.startAt)
+  const end = parseDate(ev.endAt)
+  const note = events.length > 1 ? `외 ${events.length - 1}개 일정` : undefined
+  return { start: start.iso, end: end.iso, hasTime: start.hasTime, note }
 }
 
 // 온라인 여부 추론 (제목/행사 라벨에 '온라인/LIVE/Zoom' 있으면 온라인)
@@ -162,8 +174,8 @@ function adaptOne(raw: RawNotice): Notice | null {
     title,
     source: '국민대학교 전자공학부',
     category,
-    summary: raw.summary ?? '',
-    detail: raw.summary ?? '',
+    summary: raw.summary?.trim() || '자세한 내용과 지원 조건은 공지 원문에서 확인하세요.',
+    detail: raw.summary?.trim() || '자세한 내용과 지원 조건은 공지 원문에서 확인하세요.',
     eligibleGrades: grades,
     eligibleMajors: mapMajors(raw),
     eligibilityNote: raw.reviewRequired ? '세부 자격은 공지 원문 확인 필요' : undefined,
@@ -183,18 +195,12 @@ function adaptOne(raw: RawNotice): Notice | null {
     eventNote: ev.note,
 
     // 실제 계산된 날짜 (Notice 확장 필드)
-    deadline,
-    deadlineHasTime: deadline ? hasTimeInISO(deadline) : false,
+    deadline: deadline.iso,
+    deadlineHasTime: deadline.hasTime,
     eventStart: ev.start,
     eventEnd: ev.end,
     eventHasTime: ev.hasTime,
   }
-}
-
-// ISO 문자열에 시각 정보가 있는지 (자정이 아니면 시간 있음)
-function hasTimeInISO(iso: string): boolean {
-  const d = new Date(iso)
-  return !(d.getHours() === 0 && d.getMinutes() === 0)
 }
 
 // 실데이터 전체를 Notice[] 로 변환 (마감 지난 것도 포함 - 화면 로직이 필터링)

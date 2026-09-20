@@ -51,29 +51,37 @@ export interface ServerNotice {
 // 프론트엔드 데이터 파일 경로 후보 (개발/빌드 환경 모두 대응)
 function resolveDataFile(): string {
   const candidates = [
-    // 개발: server/src -> ../../src/data
-    path.resolve(__dirname, '..', '..', '..', 'src', 'data', 'notices.data.json'),
-    // 빌드: server/dist/notices -> ../../../src/data
-    path.resolve(__dirname, '..', '..', '..', '..', 'src', 'data', 'notices.data.json'),
-    // 환경변수로 명시
+    // 환경변수로 명시한 파일을 가장 우선한다.
     process.env.NOTICES_DATA_FILE ?? '',
+    // 기현 브랜치에서 가져온 1,000건 공통 데이터 (개발/빌드 모두 동일 상대 깊이)
+    path.resolve(__dirname, '..', '..', '..', 'notices.logic.2.json'),
   ].filter(Boolean)
 
   for (const c of candidates) {
     if (fs.existsSync(c)) return c
   }
   throw new Error(
-    `notices.data.json 을 찾을 수 없습니다. NOTICES_DATA_FILE 환경변수로 경로를 지정하세요. 시도: ${candidates.join(
+    `공지 데이터를 찾을 수 없습니다. NOTICES_DATA_FILE 환경변수로 경로를 지정하세요. 시도: ${candidates.join(
       ' | ',
     )}`,
   )
 }
 
+function normalizeValidRaw(raw: string | null | undefined): string | null {
+  if (!raw || !Number.isFinite(Date.parse(raw))) return null
+  // 생성 데이터의 자정 값은 날짜만 의미하는 경우가 많아 종일 일정으로 통일한다.
+  if (/^\d{4}-\d{2}-\d{2}T00:00(?::00)?(?:[+-]\d{2}:\d{2}|Z)?$/.test(raw)) {
+    return raw.slice(0, 10)
+  }
+  return raw
+}
+
 function pickDeadlineRaw(raw: RawNotice): string | null {
-  const end = raw.applyPeriod?.end
-  if (end) return end
-  const dd = raw.deadlineDates?.[0]
-  if (dd) return dd
+  const candidates = [raw.applyPeriod?.end, ...(raw.deadlineDates ?? [])]
+  for (const candidate of candidates) {
+    const valid = normalizeValidRaw(candidate)
+    if (valid) return valid
+  }
   return null
 }
 
@@ -83,10 +91,10 @@ function normalize(raw: RawNotice): ServerNotice | null {
   if (!title || !id) return null
 
   const deadlineRaw = pickDeadlineRaw(raw)
-  const ev = raw.events?.find((e) => e && e.startAt) ?? null
+  const ev = raw.events?.find((item) => normalizeValidRaw(item?.startAt)) ?? null
 
-  const eventStartRaw = ev?.startAt ?? null
-  const eventEndRaw = ev?.endAt ?? null
+  const eventStartRaw = normalizeValidRaw(ev?.startAt)
+  const eventEndRaw = normalizeValidRaw(ev?.endAt)
 
   return {
     id,
