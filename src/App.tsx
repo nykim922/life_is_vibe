@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { StoreProvider, useStore } from './store'
 import { ToastProvider } from './components/Toast'
 import { BottomNav, type Tab } from './components/BottomNav'
+import { Login } from './screens/Login'
 import { Onboarding } from './screens/Onboarding'
 import { Home } from './screens/Home'
 import { Saved } from './screens/Saved'
@@ -20,7 +21,18 @@ function Shell() {
   // 홈 필터/스크롤 상태를 상세를 오가도 유지하기 위해 상위에서 보관
   const [homeState, setHomeState] = useState<import('./screens/Home').HomeUiState | null>(null)
 
-  // 온보딩 전에는 프로필 입력 화면만 (하단 탭 숨김)
+  // 1) 로그인 전에는 로그인 화면만 (하단 탭 숨김)
+  if (!state.loggedIn) {
+    return (
+      <div className="app-frame">
+        <div className="screen-scroll no-nav">
+          <Login />
+        </div>
+      </div>
+    )
+  }
+
+  // 2) 로그인 후, 온보딩 전에는 프로필 입력 화면만 (하단 탭 숨김)
   if (!state.onboarded || !state.profile) {
     return (
       <div className="app-frame">

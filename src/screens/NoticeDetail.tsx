@@ -165,7 +165,7 @@ export function NoticeDetail({ noticeId, onBack, onGoSchedule }: Props) {
 
         {linkNotice && (
           <div className="demo-note detail__demo">
-            <span>예시 공지라 실제 신청 페이지는 없어요. 데모용 화면입니다.</span>
+            <span>이 공지는 신청 링크 정보가 없어요.</span>
           </div>
         )}
       </div>
@@ -186,8 +186,13 @@ export function NoticeDetail({ noticeId, onBack, onGoSchedule }: Props) {
         <button
           className="btn btn--line detail__link"
           onClick={() => {
-            setLinkNotice(true)
-            toast.show('예시 공지라 실제 신청 페이지는 없어요')
+            if (notice.link) {
+              // 실제 공지 원문/신청 페이지를 새 탭으로 열기
+              window.open(notice.link, '_blank', 'noopener,noreferrer')
+            } else {
+              setLinkNotice(true)
+              toast.show('이 공지는 신청 링크가 없어요')
+            }
           }}
         >
           <LinkIcon size={18} />

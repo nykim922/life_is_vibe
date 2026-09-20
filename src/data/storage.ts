@@ -3,6 +3,8 @@ import type { AppState } from './types'
 const KEY = 'campus-secretary-v1'
 
 export const emptyState: AppState = {
+  loggedIn: false,
+  userEmail: null,
   profile: null,
   onboarded: false,
   savedIds: [],

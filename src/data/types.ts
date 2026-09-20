@@ -59,6 +59,8 @@ export interface NoticeSeed {
   eventStartTime?: string // 'HH:mm'
   eventEndTime?: string
   eventNote?: string // 진행 기간 등 텍스트 표현
+
+  link?: string // 실제 공지 원문/신청 링크 (실데이터에서 제공)
 }
 
 /** 날짜가 계산되어 화면에서 바로 쓰는 공지 */
@@ -101,6 +103,8 @@ export interface GoogleEvent {
 }
 
 export interface AppState {
+  loggedIn: boolean // 구글 로그인 완료 여부
+  userEmail: string | null // 로그인한 구글 계정 (데모에서는 표시용)
   profile: Profile | null
   onboarded: boolean
   savedIds: string[]

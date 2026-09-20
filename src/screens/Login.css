@@ -1,0 +1,98 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.login__hero {
+  padding: 64px var(--side-pad) 32px;
+  text-align: center;
+}
+
+.login__brand {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin: 14px 0 12px;
+}
+
+.login__lead {
+  font-size: 15px;
+  color: var(--ink-soft);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.login__card {
+  background: var(--card);
+  border-radius: 28px;
+  margin: auto var(--side-pad) 32px;
+  padding: 28px 22px;
+}
+
+/* 구글 로그인 버튼 (구글 가이드 스타일) */
+.google-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-pill, 12px);
+  background: #fff;
+  color: #1f1f1f;
+  font-size: 15px;
+  font-weight: 700;
+  transition: background 0.12s ease, box-shadow 0.12s ease;
+}
+
+.google-btn:hover {
+  background: #f8f9fa;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.google-btn:active {
+  background: #f1f3f4;
+}
+
+.login__benefits {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.login__benefits li {
+  position: relative;
+  padding-left: 26px;
+  font-size: 14px;
+  color: var(--ink-soft);
+  line-height: 1.4;
+}
+
+/* 체크 표시 */
+.login__benefits li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--brand, #3182f6);
+  -webkit-mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'><polyline points='20 6 9 17 4 12'/></svg>")
+    center / 11px no-repeat;
+  mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'><polyline points='20 6 9 17 4 12'/></svg>")
+    center / 11px no-repeat;
+}
+
+.login__note {
+  margin: 22px 0 0;
+  text-align: center;
+  font-size: 12px;
+  color: var(--ink-muted);
+  line-height: 1.5;
+}

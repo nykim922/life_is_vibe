@@ -18,12 +18,17 @@ import type {
   ScheduleKind,
 } from './data/types'
 import { emptyState, loadState, saveState, clearState } from './data/storage'
-import { buildGoogleEvents, buildNotices } from './data/notices'
+import { buildGoogleEvents } from './data/notices'
+import { REAL_NOTICES } from './data/adaptNotices'
 
 interface StoreValue {
   state: AppState
   notices: Notice[]
   googleEvents: GoogleEvent[] // 데모 연결 시에만 채워짐
+
+  // 로그인 (구글)
+  loginWithGoogle: (email?: string) => void
+  logout: () => void
 
   // 온보딩/프로필
   completeOnboarding: (profile: Profile) => void
@@ -82,12 +87,27 @@ export function StoreProvider({ children }: { children: ReactNode }) {
 
   const firstRun = state.firstRunDate ?? nowISODate()
 
-  const notices = useMemo(() => buildNotices(firstRun), [firstRun])
+  // 팀 실데이터(국민대 공지)를 사용. firstRun 은 구글 데모 일정 계산에만 쓰임.
+  const notices = REAL_NOTICES
 
   const googleEvents = useMemo<GoogleEvent[]>(
     () => (state.googleConnected ? buildGoogleEvents(firstRun) : []),
     [state.googleConnected, firstRun],
   )
+
+  // 구글 로그인. 로그인과 동시에 구글 캘린더도 연동된 것으로 처리.
+  const loginWithGoogle = useCallback((email?: string) => {
+    setState((s) => ({
+      ...s,
+      loggedIn: true,
+      userEmail: email ?? s.userEmail ?? 'student@kookmin.ac.kr',
+      googleConnected: true, // 로그인하면 캘린더 자동 연동
+    }))
+  }, [])
+
+  const logout = useCallback(() => {
+    setState((s) => ({ ...s, loggedIn: false, userEmail: null, googleConnected: false }))
+  }, [])
 
   const completeOnboarding = useCallback((profile: Profile) => {
     setState((s) => ({ ...s, profile, onboarded: true }))
@@ -180,6 +200,8 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     state,
     notices,
     googleEvents,
+    loginWithGoogle,
+    logout,
     completeOnboarding,
     updateProfile,
     toggleSave,

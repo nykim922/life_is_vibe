@@ -1,0 +1,713 @@
+[
+  {
+    "id": "KMU-001",
+    "title": "[장학] 2026-2학기 전자공학부 성적장학금 (2027-1학기 장학금으로 반영) ( ~12/31(목) )",
+    "category": "장학금",
+    "interestTags": [],
+    "gradeCodes": [1, 2, 3, 4],
+    "degreeLevels": ["undergraduate"],
+    "majorOpen": false,
+    "majorList": ["전자공학부"],
+    "majorStatus": "restricted",
+    "majorListComplete": true,
+    "gender": {
+      "open": true,
+      "allowedGenders": ["all"],
+      "notes": null
+    },
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": "2026-12-31T16:00:00+09:00"
+    },
+    "deadlineDates": ["2026-12-31T16:00:00+09:00"],
+    "reviewRequired": true,
+    "link": "https://ee.kookmin.ac.kr/community/board/notice/2602"
+  },
+  {
+    "id": "KMU-002",
+    "title": "[현대모비스] 26년 하반기 연구장학생 모집 (~9/29(화) 10:00)",
+    "category": "장학금",
+    "interestTags": ["기계·모빌리티", "연구개발"],
+    "gradeCodes": [],
+    "degreeLevels": ["master", "doctor"],
+    "majorOpen": false,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "majorListComplete": false,
+    "academicRules": {
+      "any": [
+        { "degreeLevel": { "eq": "master" }, "semester": { "in": [1, 2, 3] } },
+        { "degreeLevel": { "eq": "doctor" }, "courseworkCompleted": { "eq": true } }
+      ]
+    },
+    "gender": {
+      "open": true,
+      "allowedGenders": ["all"],
+      "notes": null
+    },
+    "events": [],
+    "applyPeriod": {
+      "start": "2026-09-11T00:00:00+09:00",
+      "end": "2026-09-29T10:00:00+09:00"
+    },
+    "deadlineDates": ["2026-09-29T10:00:00+09:00"],
+    "reviewRequired": true,
+    "link": "https://ee.kookmin.ac.kr/community/board/ee_recruit/1017"
+  },
+  {
+    "id": "KMU-003",
+    "title": "[기후변화대응사업단] 2026학년도 2학기 기후변화대응사업단 근로 장학생 신청 안내",
+    "category": "장학금",
+    "interestTags": [],
+    "gradeCodes": [1, 2, 3, 4],
+    "degreeLevels": ["undergraduate"],
+    "majorOpen": false,
+    "majorList": [
+      "러시아·유라시아학과", "일본학과", "중국정경전공", "동아시아국제학부",
+      "영어영문학부", "AI빅데이터융합경영학과", "공업디자인학과",
+      "시각디자인학과", "산림환경시스템학과", "미디어전공"
+    ],
+    "majorStatus": "unknown",
+    "majorListComplete": false,
+    "academicRules": {
+      "enrollment": { "eq": "enrolled" }
+    },
+    "gender": {
+      "open": true,
+      "allowedGenders": ["all"],
+      "notes": null
+    },
+    "events": [],
+    "applyPeriod": {
+      "start": "2026-08-26T00:00:00+09:00",
+      "end": "2026-09-02T00:00:00+09:00"
+    },
+    "deadlineDates": ["2026-09-02"],
+    "reviewRequired": true,
+    "link": "https://ee.kookmin.ac.kr/community/kookmin/academic/12273"
+  },
+  {
+    "id": "KMU-004",
+    "title": "[장학] 2026-1학기 창의공과대학 대학장학금 신청안내 ( 5/22(금) ~ 6/03(수) )",
+    "category": "장학금",
+    "interestTags": [],
+    "gradeCodes": [1, 2, 3, 4],
+    "degreeLevels": ["undergraduate"],
+    "majorOpen": false,
+    "majorList": ["전자공학부"],
+    "majorStatus": "conditional",
+    "majorListComplete": false,
+    "majorGroups": ["공과대학"],
+    "academicRules": {
+      "enrollment": { "eq": "enrolled" },
+      "extraSemesterAllowed": true,
+      "excludedProfile": {
+        "college": { "eq": "미래융합대학" },
+        "entryType": { "eq": "전공자율선택제" },
+        "grade": { "eq": 1 }
+      }
+    },
+    "gender": {
+      "open": true,
+      "allowedGenders": ["all"],
+      "notes": null
+    },
+    "events": [],
+    "applyPeriod": {
+      "start": "2026-05-22T00:00:00+09:00",
+      "end": "2026-06-03T00:00:00+09:00"
+    },
+    "deadlineDates": ["2026-06-03"],
+    "reviewRequired": true,
+    "link": "https://ee.kookmin.ac.kr/community/board/notice/2512"
+  },
+  {
+    "id": "KMU-005",
+    "title": "[D-5] [현대그룹] 2026 하반기 현대그룹 신입 매니저 채용(~9/22까지)",
+    "category": "채용·인턴",
+    "interestTags": [
+      "임베디드·펌웨어", "AI·데이터", "소프트웨어", "기계·모빌리티",
+      "생산·품질", "연구개발", "디자인·콘텐츠", "경영·기획", "영업·마케팅", "금융·회계"
+    ],
+    "gradeCodes": null,
+    "degreeLevels": ["bachelor", "master", "doctor"],
+    "majorOpen": false,
+    "majorList": [],
+    "majorStatus": "by_role",
+    "majorListComplete": false,
+    "academicRules": {
+      "any": [
+        {
+          "graduated": { "eq": true },
+          "degreeLevel": { "in": ["bachelor", "master", "doctor"] }
+        },
+        { "expectedGraduation": { "eq": "2027-02" } }
+      ]
+    },
+    "gender": {
+      "open": true,
+      "allowedGenders": ["all"],
+      "notes": "남성의 경우 군필 또는 면제자 조건 있음"
+    },
+    "events": [],
+    "applyPeriod": {
+      "start": "2026-09-01T00:00:00+09:00",
+      "end": "2026-09-22T00:00:00+09:00"
+    },
+    "deadlineDates": ["2026-09-22"],
+    "reviewRequired": true,
+    "link": "https://ee.kookmin.ac.kr/community/board/ee_recruit/1021"
+  },
+  {
+    "id": "KMU-006",
+    "title": "[CJ제일제당] 2026 하반기 신입사원 모집 (~9/30(수))",
+    "category": "채용·인턴",
+    "interestTags": [
+      "소프트웨어", "생산·품질", "연구개발", "디자인·콘텐츠", "경영·기획", "영업·마케팅"
+    ],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": false,
+    "majorList": [],
+    "majorStatus": "by_role",
+    "majorListComplete": false,
+    "academicRules": {
+      "any": [
+        {
+          "track": { "eq": "general" },
+          "any": [
+            { "graduated": { "eq": true } },
+            { "expectedGraduation": { "lte": "2027-02" } }
+          ]
+        },
+        { "track": { "eq": "R&D" }, "degreeLevel": { "eq": "master" } },
+        {
+          "track": { "eq": "Future Marketer League" },
+          "any": [
+            { "grade": { "gte": 4 } },
+            { "graduated": { "eq": true } }
+          ]
+        }
+      ]
+    },
+    "gender": {
+      "open": true,
+      "allowedGenders": ["all"],
+      "notes": null
+    },
+    "events": [
+      {
+        "label": "CJ Careers Q&A LIVE (CJ ONSTYLE 앱)",
+        "startAt": "2026-09-22T19:00:00+09:00",
+        "endAt": "2026-09-22T21:00:00+09:00",
+        "durationMin": 120,
+        "type": "info_session"
+      }
+    ],
+    "applyPeriod": {
+      "start": "2026-09-16T00:00:00+09:00",
+      "end": "2026-09-30T17:00:00+09:00"
+    },
+    "deadlineDates": ["2026-09-30T17:00:00+09:00"],
+    "reviewRequired": true,
+    "link": "https://ee.kookmin.ac.kr/community/board/ee_recruit/1020"
+  },
+  {
+    "id": "KMU-007",
+    "title": "[한화오션] 2026 하반기 한화오션 신입사원 채용 (~9/30 23시 59분까지)",
+    "category": "채용·인턴",
+    "interestTags": [
+      "기계·모빌리티", "생산·품질", "AI·데이터", "연구개발", "영업·마케팅", "경영·기획"
+    ],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": false,
+    "majorList": [],
+    "majorStatus": "by_role",
+    "majorListComplete": false,
+    "academicRules": {
+      "any": [
+        {
+          "track": { "eq": "general" },
+          "any": [
+            { "graduated": { "eq": true } },
+            { "expectedGraduation": { "eq": "2027-02" } }
+          ]
+        },
+        {
+          "track": { "eq": "레디오션" },
+          "gradeSemester": { "in": ["3-2", "4-1"] },
+          "enrollment": { "eq": "enrolled" }
+        }
+      ]
+    },
+    "gender": {
+      "open": true,
+      "allowedGenders": ["all"],
+      "notes": null
+    },
+    "events": [
+      {
+        "label": "온라인 LIVE 채용설명회 1회차 (일반전형)",
+        "startAt": "2026-09-17T18:00:00+09:00",
+        "endAt": "2026-09-17T19:00:00+09:00",
+        "durationMin": 60,
+        "type": "info_session"
+      },
+      {
+        "label": "온라인 LIVE 채용설명회 2회차 (Global Challenger)",
+        "startAt": "2026-09-18T08:00:00+09:00",
+        "endAt": "2026-09-18T09:00:00+09:00",
+        "durationMin": 60,
+        "type": "info_session"
+      }
+    ],
+    "applyPeriod": {
+      "start": "2026-09-14T00:00:00+09:00",
+      "end": "2026-09-30T23:59:00+09:00"
+    },
+    "deadlineDates": ["2026-09-30T23:59:00+09:00"],
+    "reviewRequired": true,
+    "link": "https://ee.kookmin.ac.kr/community/board/ee_recruit/1015"
+  },
+  {
+    "id": "KMU-008",
+    "title": "[S-TEAM 학습지원] 2026학년도 2학기 학습법 특강 프로그램 안내",
+    "category": "교육·특강",
+    "interestTags": ["취업준비"],
+    "gradeCodes": [1, 2, 3, 4],
+    "degreeLevels": ["undergraduate"],
+    "majorOpen": false,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "majorListComplete": false,
+    "academicRules": {
+      "enrollment": { "eq": "enrolled" }
+    },
+    "gender": {
+      "open": true,
+      "allowedGenders": ["all"],
+      "notes": null
+    },
+    "events": [
+      {
+        "label": "학습법 특강 1회차",
+        "startAt": "2026-09-28T00:00:00+09:00",
+        "endAt": null,
+        "durationMin": null,
+        "type": "lecture"
+      },
+      {
+        "label": "학습법 특강 2회차",
+        "startAt": "2026-11-09T00:00:00+09:00",
+        "endAt": null,
+        "durationMin": null,
+        "type": "lecture"
+      },
+      {
+        "label": "학습법 특강 3회차",
+        "startAt": "2026-11-16T00:00:00+09:00",
+        "endAt": null,
+        "durationMin": null,
+        "type": "lecture"
+      }
+    ],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": ["2026-09-28", "2026-11-09", "2026-11-16"],
+    "reviewRequired": true,
+    "link": "https://ee.kookmin.ac.kr/community/board/notice/2630"
+  },
+  {
+    "id": "KMU-009",
+    "title": "[차세대통신사업단] NEXT Career Connect 2026: AI가 바꾸는 일과 미래 직무 특강 신청 안내",
+    "category": "교육·특강",
+    "interestTags": ["AI·데이터", "통신·네트워크", "취업준비"],
+    "gradeCodes": [1, 2, 3, 4],
+    "degreeLevels": null,
+    "majorOpen": false,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "majorListComplete": false,
+    "academicRules": {
+      "enrollment": { "eq": "enrolled" }
+    },
+    "gender": {
+      "open": true,
+      "allowedGenders": ["all"],
+      "notes": null
+    },
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://ee.kookmin.ac.kr/community/board/notice/2621"
+  },
+  {
+    "id": "KMU-010",
+    "title": "[인덕대학교] 현직자가 알려주는 대기업 생산직 취업 준비 특강",
+    "category": "교육·특강",
+    "interestTags": ["생산·품질", "취업준비"],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": false,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "majorListComplete": false,
+    "academicRules": {
+      "any": [
+        { "graduated": { "eq": true } },
+        { "localYouth": { "eq": true } }
+      ]
+    },
+    "gender": {
+      "open": true,
+      "allowedGenders": ["all"],
+      "notes": null
+    },
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": "2026-09-17T17:00:00+09:00"
+    },
+    "deadlineDates": ["2026-09-17T17:00:00+09:00"],
+    "reviewRequired": true,
+    "link": "https://career.kookmin.ac.kr/ko/education/notice/view/47398"
+  },
+  {
+    "id": "KMU-011",
+    "title": "취업특강 안내",
+    "category": "교육·특강",
+    "interestTags": ["취업준비"],
+    "gradeCodes": [4],
+    "degreeLevels": ["undergraduate", "master", "doctor"],
+    "majorOpen": false,
+    "majorList": ["신소재공학부"],
+    "majorStatus": "restricted",
+    "majorListComplete": true,
+    "academicRules": {
+      "any": [
+        { "degreeLevel": { "eq": "undergraduate" }, "grade": { "eq": 4 } },
+        { "degreeLevel": { "in": ["master", "doctor"] } }
+      ]
+    },
+    "gender": {
+      "open": true,
+      "allowedGenders": ["all"],
+      "notes": null
+    },
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cms.kookmin.ac.kr/mse/bbs/job.do?mode=view&articleNo=5937202"
+  },
+  {
+    "id": "KMU-012",
+    "title": "2026 해동 K*reator's Library TEAM 3D프린팅 대회(~10/5)",
+    "category": "공모전·대회",
+    "interestTags": ["기계·모빌리티", "디자인·콘텐츠"],
+    "gradeCodes": [1, 2, 3, 4],
+    "degreeLevels": ["undergraduate"],
+    "majorOpen": false,
+    "majorList": [],
+    "majorStatus": "team_conditional",
+    "majorListComplete": false,
+    "academicRules": {
+      "enrollment": { "eq": "enrolled" },
+      "teamSize": { "eq": 2 },
+      "teamMemberRule": {
+        "field": "anchorDepartmentMember",
+        "op": "eq",
+        "value": true,
+        "minMatches": 1
+      }
+    },
+    "gender": {
+      "open": true,
+      "allowedGenders": ["all"],
+      "notes": null
+    },
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": "2026-10-05T00:00:00+09:00"
+    },
+    "deadlineDates": ["2026-10-05"],
+    "reviewRequired": true,
+    "link": "https://ee.kookmin.ac.kr/community/board/contest/329"
+  },
+  {
+    "id": "KMU-013",
+    "title": "[총상금 1,400만원] AI·블록체인 공공 및 금융서비스 아이디어 경진대회",
+    "category": "공모전·대회",
+    "interestTags": ["AI·데이터", "소프트웨어", "금융·회계", "공공·행정"],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "majorListComplete": false,
+    "gender": {
+      "open": true,
+      "allowedGenders": ["all"],
+      "notes": null
+    },
+    "events": [],
+    "applyPeriod": {
+      "start": "2026-08-21T00:00:00+09:00",
+      "end": "2026-09-20T23:59:00+09:00"
+    },
+    "deadlineDates": ["2026-09-20T23:59:00+09:00"],
+    "reviewRequired": true,
+    "link": "https://ee.kookmin.ac.kr/community/board/contest/327"
+  },
+  {
+    "id": "KMU-014",
+    "title": "[숙명여자대학교] 2026 제12회 중견기업분석 공모전",
+    "category": "공모전·대회",
+    "interestTags": ["경영·기획", "취업준비"],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": false,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "majorListComplete": false,
+    "academicRules": {
+      "ageRuleStatus": "conflicting"
+    },
+    "gender": {
+      "open": true,
+      "allowedGenders": ["all"],
+      "notes": null
+    },
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": "2026-10-11T23:00:00+09:00"
+    },
+    "deadlineDates": ["2026-10-11T23:00:00+09:00"],
+    "reviewRequired": true,
+    "link": "https://career.kookmin.ac.kr/ko/education/notice/view/47423"
+  },
+  {
+    "id": "KMU-015",
+    "title": "[중요] 2025학년도 후기(2026년 8월 졸업) 학위증 배부 안내",
+    "category": "학사·행정",
+    "interestTags": [],
+    "gradeCodes": [],
+    "degreeLevels": ["undergraduate", "master", "doctor"],
+    "majorOpen": false,
+    "majorList": ["신소재공학부"],
+    "majorStatus": "restricted",
+    "majorListComplete": true,
+    "academicRules": {
+      "graduated": { "eq": true },
+      "graduationMonth": { "eq": "2026-08" }
+    },
+    "gender": {
+      "open": true,
+      "allowedGenders": ["all"],
+      "notes": null
+    },
+    "events": [
+      {
+        "label": "학위증 교부 (공학관 223호, 사무실 수령)",
+        "startAt": "2026-08-19T10:30:00+09:00",
+        "endAt": "2026-09-30T17:00:00+09:00",
+        "durationMin": null,
+        "type": "event"
+      },
+      {
+        "label": "학위증 교부 (교무팀 본부관 104호 수령)",
+        "startAt": "2026-10-02T10:30:00+09:00",
+        "endAt": null,
+        "durationMin": null,
+        "type": "event"
+      }
+    ],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cms.kookmin.ac.kr/mse/bbs/notice.do?article.offset=0&articleLimit=25&articleNo=5940045&mode=view"
+  },
+  {
+    "id": "KMU-016",
+    "title": "[상담] ★중요★ 2026학년도 2학기 정규 학사 상담(10/1~)",
+    "category": "학사·행정",
+    "interestTags": [],
+    "gradeCodes": [1, 2, 3, 4],
+    "degreeLevels": ["undergraduate"],
+    "majorOpen": false,
+    "majorList": ["전자공학부"],
+    "majorStatus": "restricted",
+    "majorListComplete": true,
+    "gender": {
+      "open": true,
+      "allowedGenders": ["all"],
+      "notes": null
+    },
+    "events": [
+      {
+        "label": "정규 학사 상담 기간 (지도교수 일정별 상이)",
+        "startAt": "2026-10-01T00:00:00+09:00",
+        "endAt": "2026-10-12T00:00:00+09:00",
+        "durationMin": null,
+        "type": "event"
+      }
+    ],
+    "applyPeriod": {
+      "start": "2026-10-01T00:00:00+09:00",
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://ee.kookmin.ac.kr/community/board/notice/2631"
+  },
+  {
+    "id": "KMU-017",
+    "title": "★중요★ 2026-2학기 학사지도교수 배정 일정 및 변경 신청 안내(~10/1)",
+    "category": "학사·행정",
+    "interestTags": [],
+    "gradeCodes": [1, 2, 3, 4],
+    "degreeLevels": ["undergraduate"],
+    "majorOpen": false,
+    "majorList": ["전자공학부"],
+    "majorStatus": "restricted",
+    "majorListComplete": true,
+    "academicRules": {
+      "any": [
+        {
+          "changeReason": {
+            "in": ["advisor_retired", "advisor_sabbatical", "advisor_leave", "department_transfer"]
+          }
+        },
+        {
+          "changeReason": { "eq": "career" },
+          "grade": { "in": [3, 4] },
+          "enrollment": { "eq": "enrolled" }
+        }
+      ]
+    },
+    "gender": {
+      "open": true,
+      "allowedGenders": ["all"],
+      "notes": null
+    },
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": "2026-10-01T17:00:00+09:00"
+    },
+    "deadlineDates": ["2026-10-01T17:00:00+09:00"],
+    "reviewRequired": true,
+    "link": "https://ee.kookmin.ac.kr/community/board/notice/2625"
+  },
+  {
+    "id": "KMU-018",
+    "title": "[조형 통합행정실] 계약직원 모집",
+    "category": "채용·인턴",
+    "interestTags": ["공공·행정"],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": false,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "majorListComplete": false,
+    "gender": {
+      "open": true,
+      "allowedGenders": ["all"],
+      "notes": "남성의 경우 병역필 또는 면제자 조건 있음"
+    },
+    "events": [
+      {
+        "label": "2차 면접 전형",
+        "startAt": "2026-09-29T11:00:00+09:00",
+        "endAt": null,
+        "durationMin": null,
+        "type": "interview"
+      }
+    ],
+    "applyPeriod": {
+      "start": "2026-09-18T00:00:00+09:00",
+      "end": "2026-09-28T16:00:00+09:00"
+    },
+    "deadlineDates": ["2026-09-28T16:00:00+09:00"],
+    "reviewRequired": true,
+    "link": "https://www.kookmin.ac.kr/user/kmuNews/notice/10/12398/view.do?currentPageNo=1"
+  },
+  {
+    "id": "KMU-019",
+    "title": "2026년도 SL이충곤재단 장학금 신청 안내(공학계열)(생활비성 장학금)",
+    "category": "장학금",
+    "interestTags": [],
+    "gradeCodes": [3, 4],
+    "degreeLevels": ["undergraduate"],
+    "majorOpen": false,
+    "majorList": [],
+    "majorStatus": "conditional",
+    "majorListComplete": false,
+    "majorGroups": ["공학계열"],
+    "academicRules": {
+      "semester": { "gte": 5 },
+      "enrollment": { "eq": "enrolled" },
+      "regularSemester": { "eq": true }
+    },
+    "gender": {
+      "open": true,
+      "allowedGenders": ["all"],
+      "notes": null
+    },
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": "2026-09-20T22:59:00+09:00"
+    },
+    "deadlineDates": ["2026-09-20T22:59:00+09:00"],
+    "reviewRequired": true,
+    "link": "https://www.kookmin.ac.kr/user/kmuNews/notice/7/12387/view.do?currentPageNo=1"
+  },
+  {
+    "id": "KMU-020",
+    "title": "[앵커사업팀] 구.RISE사업단 2026학년도 2학기 캡스톤디자인 과제 지원 및 신청 안내 (9/21부터 접수)",
+    "category": "연구·프로젝트",
+    "interestTags": ["연구개발"],
+    "gradeCodes": null,
+    "degreeLevels": ["undergraduate"],
+    "majorOpen": false,
+    "majorList": [],
+    "majorStatus": "conditional",
+    "majorListComplete": false,
+    "excludedMajors": ["AI디자인학과"],
+    "academicRules": {
+      "capstoneEnrolled": { "eq": true },
+      "teamSize": { "gte": 2 },
+      "teamLeaderGrade": { "gte": 3 }
+    },
+    "gender": {
+      "open": true,
+      "allowedGenders": ["all"],
+      "notes": null
+    },
+    "events": [],
+    "applyPeriod": {
+      "start": "2026-09-21T10:00:00+09:00",
+      "end": "2026-10-20T16:00:00+09:00"
+    },
+    "deadlineDates": ["2026-10-20T16:00:00+09:00"],
+    "reviewRequired": true,
+    "link": "https://www.kookmin.ac.kr/user/kmuNews/notice/4/12389/view.do?currentPageNo=1"
+  }
+]
