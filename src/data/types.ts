@@ -92,7 +92,7 @@ export interface ScheduleItem {
   googleHtmlLink?: string
 }
 
-/** 구글 캘린더 데모(읽기 전용) 일정 */
+/** Google Calendar에서 조회한 일정 */
 export interface GoogleEvent {
   id: string
   title: string
@@ -100,6 +100,7 @@ export interface GoogleEvent {
   end: string // ISO
   hasTime: boolean
   location?: string
+  htmlLink: string
   origin: 'google'
 }
 

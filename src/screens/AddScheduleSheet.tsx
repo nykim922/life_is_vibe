@@ -1,10 +1,11 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { useStore, type AddScheduleOutcome } from '../store'
 import { useToast } from '../components/Toast'
 import { Sheet } from '../components/Sheet'
 import type { Notice, NotifyOption, ScheduleKind } from '../data/types'
 import { fmtDateTime, overlaps, fmtTime } from '../data/dates'
 import { AlertIcon, CheckIcon } from '../components/icons'
+import { fetchGoogleCalendarEvents, type CalendarEventItem } from '../data/api'
 import './AddScheduleSheet.css'
 
 interface Props {
@@ -17,7 +18,7 @@ interface Props {
 type KindChoice = 'deadline' | 'event' | 'both'
 
 export function AddScheduleSheet({ notice, open, onClose, onGoSchedule }: Props) {
-  const { addSchedule, hasSchedule, googleEvents, demoGoogleConnected } = useStore()
+  const { addSchedule, hasSchedule } = useStore()
   const toast = useToast()
 
   const hasDeadline = Boolean(notice.deadline)
@@ -31,19 +32,44 @@ export function AddScheduleSheet({ notice, open, onClose, onGoSchedule }: Props)
   const [notify, setNotify] = useState<NotifyOption>('day')
   const [submitting, setSubmitting] = useState(false)
   const [outcome, setOutcome] = useState<AddScheduleOutcome | null>(null)
+  const [calendarEvents, setCalendarEvents] = useState<CalendarEventItem[]>([])
 
   const eventHasTime = notice.eventHasTime
   const notifyDisabledHour =
     (choice === 'event' && !eventHasTime) ||
     (choice === 'deadline' && !notice.deadlineHasTime)
 
-  // 데모 예시 일정과의 겹침 안내 (실제 구글 일정 조회가 아님 — 데모 표시)
+  useEffect(() => {
+    if (!open || !notice.eventStart || !notice.eventHasTime) {
+      setCalendarEvents([])
+      return
+    }
+    const start = new Date(notice.eventStart).getTime()
+    const parsedEnd = notice.eventEnd ? new Date(notice.eventEnd).getTime() : NaN
+    const end = Number.isFinite(parsedEnd) && parsedEnd > start ? parsedEnd : start + 60 * 60 * 1000
+    let cancelled = false
+    void fetchGoogleCalendarEvents({
+      timeMin: new Date(start).toISOString(),
+      timeMax: new Date(end).toISOString(),
+    })
+      .then(({ items }) => {
+        if (!cancelled) setCalendarEvents(items)
+      })
+      .catch(() => {
+        if (!cancelled) setCalendarEvents([])
+      })
+    return () => {
+      cancelled = true
+    }
+  }, [open, notice.eventEnd, notice.eventHasTime, notice.eventStart])
+
+  // 실제 Google Calendar 일정과 겹치는지 안내한다.
   const conflicts = useMemo(() => {
-    if (!demoGoogleConnected || !hasEvent || !eventHasTime || !notice.eventStart) return []
-    return googleEvents.filter((g) =>
-      overlaps(notice.eventStart!, notice.eventEnd, g.start, g.end),
+    if (!hasEvent || !eventHasTime || !notice.eventStart) return []
+    return calendarEvents.filter((event) =>
+      overlaps(notice.eventStart!, notice.eventEnd, event.start, event.end),
     )
-  }, [googleEvents, demoGoogleConnected, hasEvent, eventHasTime, notice])
+  }, [calendarEvents, hasEvent, eventHasTime, notice.eventEnd, notice.eventStart])
 
   const willAddEvent = choice === 'event' || choice === 'both'
   const showConflict = willAddEvent && conflicts.length > 0
@@ -217,7 +243,7 @@ export function AddScheduleSheet({ notice, open, onClose, onGoSchedule }: Props)
             <div className="ash__conflict">
               <AlertIcon size={18} />
               <div>
-                <strong>예시 일정과 겹쳐요</strong>
+                <strong>Google Calendar 일정과 겹쳐요</strong>
                 <ul>
                   {conflicts.map((c) => (
                     <li key={c.id}>
@@ -225,7 +251,7 @@ export function AddScheduleSheet({ notice, open, onClose, onGoSchedule }: Props)
                     </li>
                   ))}
                 </ul>
-                <span>데모 예시 일정 기준 안내예요. 확인 후에도 추가할 수 있어요.</span>
+                <span>연결된 캘린더 기준 안내예요. 확인 후에도 추가할 수 있어요.</span>
               </div>
             </div>
           )}

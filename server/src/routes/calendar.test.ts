@@ -10,10 +10,12 @@ import type { ServerNotice } from '../notices/repository'
 // --- Mock 대상 모듈들 ---
 const insertMock = vi.fn()
 const findByKeyMock = vi.fn()
+const listMock = vi.fn()
 
 vi.mock('../google/calendar', () => ({
   insertPrimaryEvent: (...args: unknown[]) => insertMock(...args),
   findEventByKey: (...args: unknown[]) => findByKeyMock(...args),
+  listPrimaryEvents: (...args: unknown[]) => listMock(...args),
 }))
 
 vi.mock('../google/oauthClient', () => ({
@@ -118,12 +120,14 @@ describe('POST /api/calendar/events (mocked Google)', () => {
   beforeEach(() => {
     insertMock.mockReset()
     findByKeyMock.mockReset()
+    listMock.mockReset()
     created.clear()
     users.clear()
     noticeMap.clear()
     users.set('user-1', { sub: 'user-1', email: 'a@b.com', tokens: {} })
     noticeMap.set(NOTICE.id, NOTICE)
     findByKeyMock.mockResolvedValue(null)
+    listMock.mockResolvedValue([])
     let n = 0
     insertMock.mockImplementation(async () => {
       n += 1
@@ -193,5 +197,39 @@ describe('POST /api/calendar/events (mocked Google)', () => {
     })
     expect(res.status).toBe(422)
     expect(res.json.error).toBe('no_events_created')
+  })
+
+  it('연결된 Google Calendar 일정을 조회한다', async () => {
+    listMock.mockResolvedValue([
+      {
+        id: 'google-1',
+        title: '팀 회의',
+        start: '2026-09-21T01:00:00.000Z',
+        end: '2026-09-21T02:00:00.000Z',
+        hasTime: true,
+        htmlLink: 'https://calendar.google.com/event?eid=1',
+      },
+    ])
+    const app = makeApp()
+    const query = new URLSearchParams({
+      timeMin: '2026-09-20T00:00:00.000Z',
+      timeMax: '2026-09-27T00:00:00.000Z',
+    })
+    const res = await callApi(app, 'GET', `/api/calendar/google-events?${query}`)
+    expect(res.status).toBe(200)
+    expect(res.json.items).toHaveLength(1)
+    expect(res.json.items[0].title).toBe('팀 회의')
+    expect(listMock).toHaveBeenCalledWith(
+      expect.anything(),
+      '2026-09-20T00:00:00.000Z',
+      '2026-09-27T00:00:00.000Z',
+    )
+  })
+
+  it('Google Calendar 조회 범위가 잘못되면 400을 반환한다', async () => {
+    const app = makeApp()
+    const res = await callApi(app, 'GET', '/api/calendar/google-events?timeMin=invalid')
+    expect(res.status).toBe(400)
+    expect(listMock).not.toHaveBeenCalled()
   })
 })

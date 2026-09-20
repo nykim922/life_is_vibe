@@ -3,7 +3,7 @@ import { requireAuth } from '../middleware/requireAuth'
 import { getNoticeById } from '../notices/repository'
 import { buildEventBody, type ScheduleKind, type NotifyOption } from '../calendar/buildEvent'
 import { clientFromTokens } from '../google/oauthClient'
-import { insertPrimaryEvent, findEventByKey } from '../google/calendar'
+import { insertPrimaryEvent, findEventByKey, listPrimaryEvents } from '../google/calendar'
 import {
   getUser,
   upsertUserTokens,
@@ -181,6 +181,70 @@ calendarRouter.get('/events', requireAuth, (req, res) => {
   res.json({ ok: true, items })
 })
 
+/** 연결된 사용자의 primary Google Calendar 일정 조회 */
+calendarRouter.get('/google-events', requireAuth, async (req, res) => {
+  const sub = req.session.userSub!
+  const timeMin = parseDateQuery(req.query.timeMin)
+  const timeMax = parseDateQuery(req.query.timeMax)
+  if (!timeMin || !timeMax || timeMax.getTime() <= timeMin.getTime()) {
+    res.status(400).json({
+      error: 'invalid_range',
+      message: '올바른 조회 시작일과 종료일이 필요합니다.',
+    })
+    return
+  }
+
+  const rangeMs = timeMax.getTime() - timeMin.getTime()
+  if (rangeMs > 62 * 24 * 60 * 60 * 1000) {
+    res.status(400).json({
+      error: 'range_too_large',
+      message: '한 번에 최대 62일까지 조회할 수 있습니다.',
+    })
+    return
+  }
+
+  const user = getUser(sub)
+  if (!user) {
+    res.status(401).json({ error: 'unauthenticated' })
+    return
+  }
+
+  const client = clientFromTokens(user.tokens)
+  client.on('tokens', (newTokens) => {
+    upsertUserTokens({
+      sub: user.sub,
+      email: user.email,
+      name: user.name,
+      tokens: { ...user.tokens, ...newTokens },
+    })
+  })
+
+  try {
+    const items = await listPrimaryEvents(client, timeMin.toISOString(), timeMax.toISOString())
+    res.json({ ok: true, items })
+  } catch (error: any) {
+    const status = Number(error?.response?.status ?? error?.code)
+    console.error('[calendar] 일정 조회 실패', Number.isFinite(status) ? status : 'unknown')
+    if (status === 401 || status === 403) {
+      res.status(401).json({
+        error: 'calendar_authorization_expired',
+        message: 'Google Calendar 권한을 다시 연결해 주세요.',
+      })
+      return
+    }
+    res.status(502).json({
+      error: 'calendar_unavailable',
+      message: 'Google Calendar 일정을 불러오지 못했어요. 잠시 후 다시 시도해 주세요.',
+    })
+  }
+})
+
 function dedupe<T>(arr: T[]): T[] {
   return Array.from(new Set(arr))
+}
+
+function parseDateQuery(value: unknown): Date | null {
+  if (typeof value !== 'string' || !value) return null
+  const date = new Date(value)
+  return Number.isNaN(date.getTime()) ? null : date
 }

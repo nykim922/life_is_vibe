@@ -38,6 +38,16 @@ export interface ServerScheduleItem {
   createdAt: string
 }
 
+export interface CalendarEventItem {
+  id: string
+  title: string
+  start: string
+  end: string
+  hasTime: boolean
+  location?: string
+  htmlLink: string
+}
+
 async function request<T>(path: string, init?: RequestInit): Promise<T> {
   const res = await fetch(path, {
     credentials: 'include',
@@ -88,4 +98,15 @@ export function createCalendarEvents(input: {
 /** 내가 생성한 캘린더 일정 목록 */
 export function fetchCreatedEvents(): Promise<{ ok: boolean; items: ServerScheduleItem[] }> {
   return request<{ ok: boolean; items: ServerScheduleItem[] }>('/api/calendar/events')
+}
+
+/** 연결된 primary Google Calendar의 실제 일정 목록 */
+export function fetchGoogleCalendarEvents(input: {
+  timeMin: string
+  timeMax: string
+}): Promise<{ ok: boolean; items: CalendarEventItem[] }> {
+  const params = new URLSearchParams(input)
+  return request<{ ok: boolean; items: CalendarEventItem[] }>(
+    `/api/calendar/google-events?${params.toString()}`,
+  )
 }

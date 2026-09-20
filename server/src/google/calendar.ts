@@ -7,6 +7,16 @@ export interface InsertedEvent {
   htmlLink: string
 }
 
+export interface PrimaryCalendarEvent {
+  id: string
+  title: string
+  start: string
+  end: string
+  hasTime: boolean
+  location?: string
+  htmlLink: string
+}
+
 // 단일 EC2 프로세스의 동시 삽입을 합치고, 재시도에도 같은 Google 이벤트 ID를 사용한다.
 const pending = new Map<string, Promise<InsertedEvent>>()
 export function insertPrimaryEvent(
@@ -81,4 +91,47 @@ export async function findEventByKey(
     return { id: item.id, htmlLink: item.htmlLink ?? '' }
   }
   return null
+}
+
+/** 지정한 범위에 걸치는 primary 캘린더 일정을 시작 시각 순으로 조회한다. */
+export async function listPrimaryEvents(
+  client: OAuth2Client,
+  timeMin: string,
+  timeMax: string,
+): Promise<PrimaryCalendarEvent[]> {
+  const calendar = google.calendar({ version: 'v3', auth: client })
+  const events: PrimaryCalendarEvent[] = []
+  let pageToken: string | undefined
+
+  do {
+    const res = await calendar.events.list({
+      calendarId: 'primary',
+      timeMin,
+      timeMax,
+      singleEvents: true,
+      orderBy: 'startTime',
+      showDeleted: false,
+      maxResults: 250,
+      pageToken,
+    })
+
+    for (const item of res.data.items ?? []) {
+      if (!item.id || item.status === 'cancelled') continue
+      const start = item.start?.dateTime ?? item.start?.date
+      const end = item.end?.dateTime ?? item.end?.date
+      if (!start || !end) continue
+      events.push({
+        id: item.id,
+        title: item.summary?.trim() || '(제목 없음)',
+        start,
+        end,
+        hasTime: Boolean(item.start?.dateTime),
+        location: item.location?.trim() || undefined,
+        htmlLink: item.htmlLink ?? '',
+      })
+    }
+    pageToken = res.data.nextPageToken ?? undefined
+  } while (pageToken)
+
+  return events
 }

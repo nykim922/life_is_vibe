@@ -9,7 +9,6 @@ export function Onboarding() {
   return (
     <div className="onb">
       <header className="onb__hero">
-        <span className="demo-pill">데모</span>
         <h1 className="onb__brand">캠퍼스 비서</h1>
         <p className="onb__lead">흩어진 공지에서 나에게 맞는 기회를 찾아보세요.</p>
       </header>

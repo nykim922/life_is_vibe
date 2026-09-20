@@ -3,7 +3,6 @@ import {
   useCallback,
   useContext,
   useEffect,
-  useMemo,
   useRef,
   useState,
   type ReactNode,
@@ -11,7 +10,6 @@ import {
 import type {
   AppState,
   AuthSlice,
-  GoogleEvent,
   Notice,
   NotifyOption,
   Profile,
@@ -19,7 +17,6 @@ import type {
   ScheduleKind,
 } from './data/types'
 import { emptyState, loadState, saveState, clearState } from './data/storage'
-import { buildGoogleEvents } from './data/notices'
 import { REAL_NOTICES } from './data/adaptNotices'
 import {
   createCalendarEvents,
@@ -40,7 +37,6 @@ interface StoreValue {
   state: AppState
   auth: AuthSlice
   notices: Notice[]
-  googleEvents: GoogleEvent[] // 데모 예시 일정(실제 구글 계정 아님)
 
   // 로그인 (실제 Google OAuth)
   loginWithGoogle: () => void
@@ -68,11 +64,6 @@ interface StoreValue {
   removeSchedule: (id: string) => void
   hasSchedule: (noticeId: string, kind: ScheduleKind) => boolean
 
-  // 데모 예시 캘린더 (실제 구글 계정 조회 아님)
-  demoGoogleConnected: boolean
-  connectDemoGoogle: () => void
-  refreshDemoGoogle: () => void
-
   // 초기화
   resetAll: () => void
 }
@@ -99,9 +90,6 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     calendarConnected: false,
     googleConfigured: false,
   })
-
-  // 데모 예시 캘린더 표시 여부 (실제 구글 연동과 무관, 화면 데모용)
-  const [demoGoogleConnected, setDemoGoogleConnected] = useState(false)
 
   // localStorage 저장 (사용자 데이터만)
   const firstSave = useRef(true)
@@ -210,14 +198,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     }
   }, [auth.status])
 
-  const firstRun = state.firstRunDate ?? nowISODate()
   const notices = REAL_NOTICES
-
-  // 데모 예시 일정: 실제 구글 계정 데이터가 아님을 화면에서 명확히 표시한다.
-  const googleEvents = useMemo<GoogleEvent[]>(
-    () => (demoGoogleConnected ? buildGoogleEvents(firstRun) : []),
-    [demoGoogleConnected, firstRun],
-  )
 
   // 실제 Google OAuth 로그인 시작 (서버 엔드포인트로 리다이렉트)
   const loginWithGoogle = useCallback(() => {
@@ -344,25 +325,15 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     [state.scheduleItems],
   )
 
-  const connectDemoGoogle = useCallback(() => {
-    setDemoGoogleConnected(true)
-  }, [])
-
-  const refreshDemoGoogle = useCallback(() => {
-    setDemoGoogleConnected((v) => v) // 재계산 유도용 no-op
-  }, [])
-
   const resetAll = useCallback(() => {
     clearState()
     setState({ ...emptyState, firstRunDate: nowISODate() })
-    setDemoGoogleConnected(false)
   }, [])
 
   const value: StoreValue = {
     state,
     auth,
     notices,
-    googleEvents,
     loginWithGoogle,
     logout,
     completeOnboarding,
@@ -375,9 +346,6 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     addSchedule,
     removeSchedule,
     hasSchedule,
-    demoGoogleConnected,
-    connectDemoGoogle,
-    refreshDemoGoogle,
     resetAll,
   }
 

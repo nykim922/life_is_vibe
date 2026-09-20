@@ -168,8 +168,7 @@ export function ProfileScreen() {
 
         <div className="demo-note pscreen__demo">
           <span>
-            로그인과 일정 저장은 실제 구글 캘린더에 연동돼요. 추천/AI 및 예시 캘린더 표시는 데모
-            데이터로 동작합니다.
+            일정 조회와 저장은 연결된 Google Calendar에 실시간으로 반영됩니다.
           </span>
         </div>
       </div>
