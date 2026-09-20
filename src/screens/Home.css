@@ -52,3 +52,13 @@
 .home__list {
   display: block;
 }
+
+/* AI 추천 상태 표시 */
+.home__ai {
+  font-weight: 600;
+  color: var(--ink-muted);
+}
+
+.home__ai--on {
+  color: var(--brand, #3182f6);
+}
