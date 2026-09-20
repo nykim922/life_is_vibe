@@ -140,7 +140,7 @@ calendarRouter.post('/events', requireAuth, async (req, res) => {
         appliedDefaultDuration: build.appliedDefaultDuration,
       })
     } catch (e: any) {
-      console.error('[calendar] 이벤트 생성 실패', kind, e?.message ?? e)
+      console.error('[calendar] 이벤트 생성 실패', kind)
       // 실제 저장 실패는 성공으로 처리하지 않는다.
       skipped.push({
         kind,

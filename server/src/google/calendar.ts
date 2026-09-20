@@ -7,34 +7,51 @@ export interface InsertedEvent {
   htmlLink: string
 }
 
-/**
- * 사용자의 primary 캘린더에 이벤트를 생성한다.
- *
- * requestId(멱등키)를 함께 넘겨, 네트워크 재시도로 동일 이벤트가
- * 중복 생성되지 않도록 Google 측 중복 방지를 활용한다.
- * (events.insert 자체는 requestId 를 직접 받지 않으므로, import 대신
- *  Google 의 중복 방지를 위해 우리는 서버 저장소 기록으로 1차 차단하고,
- *  Calendar 이벤트에 확장 속성으로 멱등키를 심어 2차 확인한다.)
- */
-export async function insertPrimaryEvent(
+// 단일 EC2 프로세스의 동시 삽입을 합치고, 재시도에도 같은 Google 이벤트 ID를 사용한다.
+const pending = new Map<string, Promise<InsertedEvent>>()
+export function insertPrimaryEvent(
+  client: OAuth2Client,
+  body: GoogleEventBody,
+  idempotencyKey: string,
+): Promise<InsertedEvent> {
+  const existing = pending.get(idempotencyKey)
+  if (existing) return existing
+  const task = insertOnce(client, body, idempotencyKey).finally(() => {
+    pending.delete(idempotencyKey)
+  })
+  pending.set(idempotencyKey, task)
+  return task
+}
+
+async function insertOnce(
   client: OAuth2Client,
   body: GoogleEventBody,
   idempotencyKey: string,
 ): Promise<InsertedEvent> {
   const calendar = google.calendar({ version: 'v3', auth: client })
 
-  const res = await calendar.events.insert({
-    calendarId: 'primary',
-    requestBody: {
-      ...body,
-      // 확장 속성에 멱등키를 저장해 중복 확인에 사용
-      extendedProperties: {
-        private: { campusSecretaryKey: idempotencyKey },
+  const eventId = `cf${idempotencyKey}`
+  let data
+  try {
+    const res = await calendar.events.insert({
+      calendarId: 'primary',
+      requestBody: {
+        ...body,
+        id: eventId,
+        // 확장 속성에 멱등키를 저장해 중복 확인에 사용
+        extendedProperties: {
+          private: { campusSecretaryKey: idempotencyKey },
+        },
       },
-    },
-  })
+    })
 
-  const data = res.data
+    data = res.data
+  } catch (error: any) {
+    if (Number(error?.response?.status ?? error?.code) !== 409) throw error
+    const res = await calendar.events.get({ calendarId: 'primary', eventId })
+    data = res.data
+    if (data.status === 'cancelled') throw new Error('Event was deleted')
+  }
   if (!data.id) {
     throw new Error('Google Calendar 이벤트 생성 응답에 id 가 없습니다.')
   }

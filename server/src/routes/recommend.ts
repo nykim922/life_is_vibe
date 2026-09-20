@@ -1,3 +1,4 @@
+import { requireAuth } from '../middleware/requireAuth'
 import { Router } from 'express'
 import {
   generateAiRecommendations,
@@ -5,6 +6,7 @@ import {
 } from '../ai/aiClient'
 
 export const recommendRouter = Router()
+recommendRouter.use(requireAuth)
 
 /**
  * POST /api/recommend
@@ -31,7 +33,7 @@ recommendRouter.post('/', async (req, res) => {
     const recommendations = await generateAiRecommendations(profile, notices)
     return res.json({ aiUsed: true, recommendations })
   } catch (err) {
-    console.error('[api/recommend] AI 실패, 폴백 예정:', err)
+    console.error('[api/recommend] AI 실패, 폴백 예정')
     return res.status(200).json({ aiUsed: false, recommendations: [] })
   }
 })

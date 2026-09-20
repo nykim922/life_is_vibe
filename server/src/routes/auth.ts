@@ -25,7 +25,7 @@ authRouter.get('/me', (req, res) => {
     })
     return
   }
-  const calendarConnected = OAUTH_SCOPES.includes(
+  const calendarConnected = (user.tokens.scope ?? '').split(' ').includes(
     'https://www.googleapis.com/auth/calendar.events',
   )
   res.json({
@@ -126,7 +126,7 @@ authRouter.get('/google/callback', async (req, res) => {
       })
     })
   } catch (e) {
-    console.error('[auth] callback 실패', e)
+    console.error('[auth] callback 실패') // OAuth 오류 객체에는 비밀값이 포함될 수 있음
     redirectToApp('?login=error')
   }
 })

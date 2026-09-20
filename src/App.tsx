@@ -35,7 +35,7 @@ function Shell() {
     )
   }
 
-  // 1) 로그인 전에는 로그인 화면만 (하단 탭 숨김)
+  // OAuth 미설정이나 백엔드 장애도 인증을 우회하는 근거가 될 수 없다.
   if (auth.status !== 'authenticated') {
     return (
       <div className="app-frame">

@@ -46,7 +46,7 @@ export function Login() {
           className="google-btn"
           onClick={() => loginWithGoogle()}
           disabled={notConfigured}
-          title={notConfigured ? '서버에 Google 로그인 설정이 필요해요' : undefined}
+          title={notConfigured ? '지금은 로그인할 수 없어요. 잠시 후 다시 시도해 주세요.' : undefined}
         >
           <GoogleLogo size={20} />
           <span>구글로 로그인하기</span>
@@ -60,8 +60,7 @@ export function Login() {
 
         {notConfigured ? (
           <p className="login__note">
-            * 현재 서버에 Google 로그인 정보가 설정되지 않았어요. 배포 시 환경변수를 등록하면
-            실제 로그인이 활성화됩니다.
+            * 지금은 로그인할 수 없어요. 잠시 후 다시 시도해 주세요.
           </p>
         ) : (
           <p className="login__note">

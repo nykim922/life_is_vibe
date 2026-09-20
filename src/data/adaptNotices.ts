@@ -47,29 +47,35 @@ function mapCategory(raw: string | undefined): Category {
   }
 }
 
-// 팀 관심 태그 → 앱 Interest 로 매핑 (겹치는 것만 채택, 없으면 제외)
-const INTEREST_MAP: Record<string, Interest> = {
-  '반도체': '반도체',
-  '공정·장비': '공정·장비',
-  '생산·품질': '공정·장비',
-  '소프트웨어': '소프트웨어',
-  '임베디드·펌웨어': '소프트웨어',
-  '통신·네트워크': '소프트웨어',
-  'AI·데이터': 'AI·데이터',
-  '연구개발': 'AI·데이터',
-  '디자인·콘텐츠': '디자인',
-  '영업·마케팅': '마케팅',
-  '경영·기획': '마케팅',
-  '금융·회계': '마케팅',
-  '기계·모빌리티': '공정·장비',
+// 팀 관심 태그 → 앱 Interest 로 매핑.
+// 학과별 추천 키워드(options.ts 의 INTEREST_BY_MAJOR)와 이름을 맞춰,
+// 프로필 관심 키워드와 공지 태그가 직접 매칭되도록 한다.
+const INTEREST_MAP: Record<string, Interest[]> = {
+  '반도체': ['반도체'],
+  '공정·장비': ['공정·장비'],
+  '생산·품질': ['생산·품질'],
+  '소프트웨어': ['소프트웨어'],
+  '임베디드·펌웨어': ['임베디드·펌웨어'],
+  '통신·네트워크': ['통신·네트워크'],
+  'AI·데이터': ['AI·데이터'],
+  '연구개발': ['연구개발'],
+  '신소재': ['신소재'],
+  '보안': ['보안'],
+  '창업': ['창업'],
+  '콘텐츠': ['콘텐츠'],
+  '디자인·콘텐츠': ['디자인', '콘텐츠'],
+  '영업·마케팅': ['마케팅'],
+  '경영·기획': ['경영·기획'],
+  '금융·회계': ['금융·회계'],
+  '기계·모빌리티': ['기계·모빌리티'],
+  '공공·행정': ['경영·기획'],
+  '통신': ['통신·네트워크'],
 }
 
 function mapInterests(tags: string[] | undefined): Interest[] {
   if (!Array.isArray(tags)) return []
-  const mapped = tags
-    .map((t) => INTEREST_MAP[t])
-    .filter((x): x is Interest => Boolean(x))
-  // 중복 제거
+  const mapped = tags.flatMap((tag) => INTEREST_MAP[tag] ?? [])
+  // 한 원천 태그가 여러 관심 키워드로 확장될 수 있으므로 마지막에 중복 제거
   return Array.from(new Set(mapped))
 }
 
