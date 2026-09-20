@@ -1,0 +1,23 @@
+[Unit]
+Description=CampusFit production Express API
+After=network.target
+
+[Service]
+Type=simple
+User=ec2-user
+Group=ec2-user
+WorkingDirectory=/home/ec2-user/campusfit-release/server
+ExecStart=/usr/bin/node dist/index.js
+Environment=NODE_ENV=production
+EnvironmentFile=/home/ec2-user/campusfit-release/server/.env
+UMask=0077
+Restart=on-failure
+RestartSec=3
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=/home/ec2-user/campusfit-release/private/data
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

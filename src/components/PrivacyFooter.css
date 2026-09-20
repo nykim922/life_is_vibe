@@ -1,0 +1,12 @@
+.privacy-footer {
+  padding: 20px var(--side-pad) 12px;
+  text-align: center;
+  color: var(--ink-soft);
+  font-size: 13px;
+}
+
+.privacy-footer a {
+  display: inline-block;
+  padding: 10px 8px;
+  text-underline-offset: 4px;
+}

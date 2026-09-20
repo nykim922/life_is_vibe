@@ -9,6 +9,8 @@ import { Saved } from './screens/Saved'
 import { Schedule } from './screens/Schedule'
 import { ProfileScreen } from './screens/ProfileScreen'
 import { NoticeDetail } from './screens/NoticeDetail'
+import { Privacy } from './screens/Privacy'
+import { PrivacyFooter } from './components/PrivacyFooter'
 import './components/ui.css'
 
 type View =
@@ -30,6 +32,7 @@ function Shell() {
             <div className="auth-loading__spinner" aria-hidden="true" />
             <p className="auth-loading__text">로그인 상태를 확인하고 있어요…</p>
           </div>
+          <PrivacyFooter />
         </div>
       </div>
     )
@@ -41,6 +44,7 @@ function Shell() {
       <div className="app-frame">
         <div className="screen-scroll no-nav">
           <Login />
+          <PrivacyFooter />
         </div>
       </div>
     )
@@ -52,6 +56,7 @@ function Shell() {
       <div className="app-frame">
         <div className="screen-scroll no-nav">
           <Onboarding />
+          <PrivacyFooter />
         </div>
       </div>
     )
@@ -93,6 +98,7 @@ function Shell() {
         )}
         {tab === 'schedule' && <Schedule />}
         {tab === 'profile' && <ProfileScreen />}
+        <PrivacyFooter />
       </div>
       <BottomNav active={tab} onChange={goTab} />
     </div>
@@ -100,6 +106,11 @@ function Shell() {
 }
 
 export default function App() {
+  // 공개 문서는 세션 조회나 사용자 데이터 저장 없이 열 수 있어야 한다.
+  if (window.location.pathname.replace(/\/+$/, '') === '/privacy') {
+    return <Privacy />
+  }
+
   return (
     <StoreProvider>
       <ToastProvider>
