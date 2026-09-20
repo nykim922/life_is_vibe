@@ -197,6 +197,11 @@ export function isNoticeOnBlockedDay(notice: Notice, profile: Profile): boolean 
   const days = profile.availableDays
   if (!days || days.length === 0) return false // 요일 제한 없음
   if (!notice.eventStart) return false // 행사일이 없는 공지는 요일 필터 제외
-  const day = new Date(notice.eventStart).getDay() // 0=일 ~ 6=토
+  const weekday = new Intl.DateTimeFormat('en-US', {
+    timeZone: 'Asia/Seoul',
+    weekday: 'short',
+  }).format(new Date(notice.eventStart))
+  const day = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].indexOf(weekday)
+  if (day < 0) return false
   return !days.includes(day) // 참여 가능 요일에 없으면 차단 대상
 }

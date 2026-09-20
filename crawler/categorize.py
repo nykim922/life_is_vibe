@@ -2,6 +2,7 @@
 # 앱 카테고리 4종: 교육 / 채용 / 대외활동 / 장학금
 
 import re
+from datetime import date
 
 
 def categorize(url_path: str, title: str) -> str:
@@ -53,13 +54,14 @@ def infer_interests(title: str) -> list:
 
 
 # 제목에서 마감일(YYYY-MM-DD)을 추출 시도 (예: ~9/29, ~12/31(목))
-def extract_deadline(title: str, year_hint: int = 2026) -> str | None:
+def extract_deadline(title: str, year_hint: int | None = None) -> str | None:
     # ~M/D 또는 ~MM/DD 패턴
     m = re.search(r"~\s*(\d{1,2})/(\d{1,2})", title)
     if m:
+        year = year_hint or date.today().year
         month, day = int(m.group(1)), int(m.group(2))
         try:
-            return f"{year_hint}-{month:02d}-{day:02d}"
+            return date(year, month, day).isoformat()
         except ValueError:
             return None
     return None

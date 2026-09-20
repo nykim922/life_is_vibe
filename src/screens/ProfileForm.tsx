@@ -22,9 +22,9 @@ export function ProfileForm({ initial, submitLabel, onSubmit, onCancel }: Props)
   const [interests, setInterests] = useState<Interest[]>(initial?.interests ?? [])
   const [goals, setGoals] = useState<Goal[]>(initial?.goals ?? [])
   const [context, setContext] = useState<string>(initial?.context ?? '')
-  // 참여 가능한 요일 (기본: 평일 월~금). 저장된 값이 있으면 그걸 사용.
+  // 선택하지 않으면 요일 제한을 적용하지 않는다.
   const [availableDays, setAvailableDays] = useState<number[]>(
-    initial?.availableDays ?? [1, 2, 3, 4, 5],
+    initial?.availableDays ?? [],
   )
 
   // 직접 추가 키워드 입력 상태
@@ -119,7 +119,8 @@ export function ProfileForm({ initial, submitLabel, onSubmit, onCancel }: Props)
 
       <div className="pform__field">
         <span className="pform__label">
-          참여 가능한 요일 <span className="pform__hint">복수 선택 · 행사·설명회 추천에 반영</span>
+          참여 가능한 요일{' '}
+          <span className="pform__hint">선택 안 하면 제한 없음 · 행사 추천에 반영</span>
         </span>
         <div className="pform__days" role="group" aria-label="참여 가능한 요일 선택">
           {DAY_OPTIONS.map((d) => (

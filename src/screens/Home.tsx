@@ -102,8 +102,8 @@ export function Home({ onOpenDetail, onEditProfile, ui, onUiChange }: Props) {
 
   const filtered = useMemo(() => {
     let list = baseList
-    // 참여 불가 요일에 걸리는 행사/설명회는 기본 숨김 (체크박스로 보이기 가능)
-    if (!u.showBlockedDays) {
+    // 사용자가 "주말만"을 직접 선택하면 요일 선호보다 명시적 필터를 우선한다.
+    if (!u.showBlockedDays && !u.weekend) {
       list = list.filter((s) => !isNoticeOnBlockedDay(s.notice, profile))
     }
     if (u.category !== '전체') list = list.filter((s) => s.notice.category === u.category)
@@ -194,7 +194,7 @@ export function Home({ onOpenDetail, onEditProfile, ui, onUiChange }: Props) {
             aria-pressed={u.showBlockedDays}
             onClick={() => set({ showBlockedDays: !u.showBlockedDays })}
           >
-            안 되는 요일도
+            참여 어려운 일정 포함
           </button>
         )}
       </div>

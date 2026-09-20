@@ -80,5 +80,5 @@ export const EXAMPLE_PROFILE = {
   interests: ['반도체', '공정·장비'] as Interest[],
   goals: ['직무 탐색', '교육 수강'] as Goal[],
   context: '학기 중이라 주말이나 온라인 프로그램을 선호해요.',
-  availableDays: [1, 2, 3, 4, 5], // 평일(월~금)
+  availableDays: [], // 선택하지 않으면 요일 제한 없음
 }

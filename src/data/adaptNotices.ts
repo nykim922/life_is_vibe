@@ -15,6 +15,7 @@ type RawEvent = {
 type RawNotice = {
   id?: string
   title?: string
+  source?: string
   category?: string
   interestTags?: string[]
   gradeCodes?: number[] | null
@@ -63,7 +64,9 @@ const INTEREST_MAP: Record<string, Interest[]> = {
   '보안': ['보안'],
   '창업': ['창업'],
   '콘텐츠': ['콘텐츠'],
+  '디자인': ['디자인'],
   '디자인·콘텐츠': ['디자인', '콘텐츠'],
+  '마케팅': ['마케팅'],
   '영업·마케팅': ['마케팅'],
   '경영·기획': ['경영·기획'],
   '금융·회계': ['금융·회계'],
@@ -160,7 +163,7 @@ function adaptOne(raw: RawNotice): Notice | null {
   return {
     id: raw.id ?? title.slice(0, 12),
     title,
-    source: '국민대학교 전자공학부',
+    source: raw.source?.trim() || '국민대학교 전자공학부',
     category,
     summary: raw.summary ?? '',
     detail: raw.summary ?? '',

@@ -23,3 +23,10 @@ npm-debug.log*
 # env
 .env
 .env.local
+
+# crawler runtime cache
+crawler/notices.db
+crawler/notices.db-shm
+crawler/notices.db-wal
+__pycache__/
+*.py[cod]

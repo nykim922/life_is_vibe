@@ -1,0 +1,3909 @@
+[
+  {
+    "id": "cs-20e38eb2e7",
+    "title": "[조형 통합행정실] 계약직원 모집",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/kookmin/recruit/12398",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-09-18"
+  },
+  {
+    "id": "cs-37e3bf100d",
+    "title": "LG유플러스 2026년 하반기 신입채용 (~9/27 23:00)",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": "2026-09-27"
+    },
+    "deadlineDates": [
+      "2026-09-27"
+    ],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/jobs/2165",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-09-18"
+  },
+  {
+    "id": "cst-758dab0276",
+    "title": "[조형 통합행정실] 계약직원 모집",
+    "source": "국민대 과학기술대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cst.kookmin.ac.kr/community/job/recruit/12398",
+    "summary": "과학기술대학 공지 · 게시일 2026-09-18"
+  },
+  {
+    "id": "cs-21aa441963",
+    "title": "[CJ제일제당] 2026 하반기 신입사원 모집 (~9/30)",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": "2026-09-30"
+    },
+    "deadlineDates": [
+      "2026-09-30"
+    ],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/jobs/2164",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-09-17"
+  },
+  {
+    "id": "cs-3e00701c8d",
+    "title": "2026-2 중간고사 시행 안내",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/notice/2869",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-09-17"
+  },
+  {
+    "id": "cs-f8c1a9e43a",
+    "title": "2026년도 하반기 춘천인재육성장학재단 봄내장학생 …",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "장학금",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/kookmin/scholarship/12396",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-09-17"
+  },
+  {
+    "id": "ee-8282fa80eb",
+    "title": "[CJ제일제당] 2026 하반기 신입사원 모집 (~9/30(수))",
+    "source": "국민대 전자공학부",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": "2026-09-30"
+    },
+    "deadlineDates": [
+      "2026-09-30"
+    ],
+    "reviewRequired": true,
+    "link": "https://ee.kookmin.ac.kr/community/board/ee_recruit/1020",
+    "summary": "전자공학부 공지 · 게시일 2026-09-17"
+  },
+  {
+    "id": "ee-f034afbf44",
+    "title": "[D-5] [현대그룹] 2026 하반기 현대그룹 신입 매니저 채용(~9/22까지)",
+    "source": "국민대 전자공학부",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": "2026-09-22"
+    },
+    "deadlineDates": [
+      "2026-09-22"
+    ],
+    "reviewRequired": true,
+    "link": "https://ee.kookmin.ac.kr/community/board/ee_recruit/1021",
+    "summary": "전자공학부 공지 · 게시일 2026-09-17"
+  },
+  {
+    "id": "cs-2ab164ffef",
+    "title": "2026 대한산업보건협회 산재 노동자 자녀 성장지원사…",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "장학금",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/kookmin/scholarship/12390",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-09-16"
+  },
+  {
+    "id": "cs-c5498ffff5",
+    "title": "국민대학교 산학협력단 앵커사업 「산학협력생태계 …",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/kookmin/recruit/12394",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-09-16"
+  },
+  {
+    "id": "cst-d1dbc0cfd7",
+    "title": "국민대학교 산학협력단 앵커사업 「산학협력생태계 활성화」 계약직 연구원 모집",
+    "source": "국민대 과학기술대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cst.kookmin.ac.kr/community/job/recruit/12394",
+    "summary": "과학기술대학 공지 · 게시일 2026-09-16"
+  },
+  {
+    "id": "ee-02b92d672c",
+    "title": "[LIG D&A] 임베디드SW 스쿨 5기 모집 (~9/28(월))",
+    "source": "국민대 전자공학부",
+    "category": "채용·인턴",
+    "interestTags": [
+      "소프트웨어"
+    ],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": "2026-09-28"
+    },
+    "deadlineDates": [
+      "2026-09-28"
+    ],
+    "reviewRequired": true,
+    "link": "https://ee.kookmin.ac.kr/community/board/ee_recruit/1018",
+    "summary": "전자공학부 공지 · 게시일 2026-09-16"
+  },
+  {
+    "id": "ee-eaf76325a2",
+    "title": "[버킷플레이스] 오늘의집 주니어 B2B 영업 담당자 채용 (전환형)  채용 (~9월 23일까…",
+    "source": "국민대 전자공학부",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://ee.kookmin.ac.kr/community/board/ee_recruit/1019",
+    "summary": "전자공학부 공지 · 게시일 2026-09-16"
+  },
+  {
+    "id": "cs-0c968d895a",
+    "title": "[한화오션] 2026 하반기 한화오션 신입사원 채용 (~9…",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/jobs/2162",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-09-15"
+  },
+  {
+    "id": "cs-0da6ada567",
+    "title": "[현대모비스] 26년 하반기 로보틱스 집중 채용 (~9/2…",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": "2026-09-02"
+    },
+    "deadlineDates": [
+      "2026-09-02"
+    ],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/jobs/2160",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-09-15"
+  },
+  {
+    "id": "cs-63d96a512b",
+    "title": "[현대해상] 2026 현대해상 대졸 신입사원 채용(~9/21…",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": "2026-09-21"
+    },
+    "deadlineDates": [
+      "2026-09-21"
+    ],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/jobs/2159",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-09-15"
+  },
+  {
+    "id": "cs-6f9173351b",
+    "title": "[현대모비스] 26년 하반기 연구장학생 모집 (~9/29(…",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "장학금",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": "2026-09-29"
+    },
+    "deadlineDates": [
+      "2026-09-29"
+    ],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/jobs/2161",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-09-15"
+  },
+  {
+    "id": "cs-7ab3f5a06e",
+    "title": "[티맥스티베로] 채용",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/jobs/2163",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-09-15"
+  },
+  {
+    "id": "cs-7c5efd671f",
+    "title": "2026년도 SL이충곤재단 장학금 신청 안내(공학계열)(…",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "장학금",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/kookmin/scholarship/12387",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-09-15"
+  },
+  {
+    "id": "cs-d3f4a80e8e",
+    "title": "2026년 제2학기 윤영문화재단 장학생 선발 공고(문화…",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "장학금",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/kookmin/scholarship/12385",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-09-15"
+  },
+  {
+    "id": "ee-259a66b32c",
+    "title": "2026 해동 K*reator's Library TEAM 3D프린팅 대회(~10/5)",
+    "source": "국민대 전자공학부",
+    "category": "공모전·대회",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": "2026-10-05"
+    },
+    "deadlineDates": [
+      "2026-10-05"
+    ],
+    "reviewRequired": true,
+    "link": "https://ee.kookmin.ac.kr/community/board/contest/329",
+    "summary": "전자공학부 공지 · 게시일 2026-09-15"
+  },
+  {
+    "id": "ee-311ced0900",
+    "title": "[한화오션] 2026 하반기 한화오션 신입사원 채용 (~9/30 23시 59분까지)",
+    "source": "국민대 전자공학부",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": "2026-09-30"
+    },
+    "deadlineDates": [
+      "2026-09-30"
+    ],
+    "reviewRequired": true,
+    "link": "https://ee.kookmin.ac.kr/community/board/ee_recruit/1015",
+    "summary": "전자공학부 공지 · 게시일 2026-09-15"
+  },
+  {
+    "id": "ee-5f4e40b567",
+    "title": "[현대모비스] 26년 하반기 로보틱스 집중 채용 (~9/29(화) 10:00)",
+    "source": "국민대 전자공학부",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": "2026-09-29"
+    },
+    "deadlineDates": [
+      "2026-09-29"
+    ],
+    "reviewRequired": true,
+    "link": "https://ee.kookmin.ac.kr/community/board/ee_recruit/1016",
+    "summary": "전자공학부 공지 · 게시일 2026-09-15"
+  },
+  {
+    "id": "ee-aae8d89b34",
+    "title": "[현대해상] 2026 현대해상 대졸 신입사원 채용(~9/21(월)까지)",
+    "source": "국민대 전자공학부",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": "2026-09-21"
+    },
+    "deadlineDates": [
+      "2026-09-21"
+    ],
+    "reviewRequired": true,
+    "link": "https://ee.kookmin.ac.kr/community/board/ee_recruit/1014",
+    "summary": "전자공학부 공지 · 게시일 2026-09-15"
+  },
+  {
+    "id": "ee-c7929c3b2e",
+    "title": "[현대모비스] 26년 하반기 연구장학생 모집 (~9/29(화) 10:00)",
+    "source": "국민대 전자공학부",
+    "category": "장학금",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": "2026-09-29"
+    },
+    "deadlineDates": [
+      "2026-09-29"
+    ],
+    "reviewRequired": true,
+    "link": "https://ee.kookmin.ac.kr/community/board/ee_recruit/1017",
+    "summary": "전자공학부 공지 · 게시일 2026-09-15"
+  },
+  {
+    "id": "cs-019d62c512",
+    "title": "[공학III(소프트웨어) 통합행정실] 계약직원 모집(소…",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "채용·인턴",
+    "interestTags": [
+      "소프트웨어"
+    ],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/kookmin/recruit/12379",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-09-14"
+  },
+  {
+    "id": "cs-021bcfcc38",
+    "title": "[브랜딩디자인센터] 계약직원 모집",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "채용·인턴",
+    "interestTags": [
+      "디자인"
+    ],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/kookmin/recruit/12376",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-09-14"
+  },
+  {
+    "id": "cs-5d0d12b64b",
+    "title": "2026년 고속도로 장학생 선발 안내문",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "장학금",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/kookmin/scholarship/12371",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-09-14"
+  },
+  {
+    "id": "cs-7c9ab16f36",
+    "title": "[풍산그룹] 2026 신입사원 채용 및 본사 초청 채용설…",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/jobs/2158",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-09-14"
+  },
+  {
+    "id": "cs-a92a9e7e4f",
+    "title": "2026년 JW이종호재단 기초과학자 장학생 선발 안내",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "장학금",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/kookmin/scholarship/12373",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-09-14"
+  },
+  {
+    "id": "cs-b30c6e1d5b",
+    "title": "[DBEW Award 운영센터] 계약직원 모집",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/kookmin/recruit/12382",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-09-14"
+  },
+  {
+    "id": "cs-e95fa4891c",
+    "title": "[공학교육혁신센터] 계약직원 모집",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/kookmin/recruit/12375",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-09-14"
+  },
+  {
+    "id": "cst-affc4893fb",
+    "title": "[공학III(소프트웨어) 통합행정실] 계약직원 모집(소프트웨어융합대학 교학팀)",
+    "source": "국민대 과학기술대학",
+    "category": "채용·인턴",
+    "interestTags": [
+      "소프트웨어"
+    ],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cst.kookmin.ac.kr/community/job/recruit/12379",
+    "summary": "과학기술대학 공지 · 게시일 2026-09-14"
+  },
+  {
+    "id": "cst-c862783568",
+    "title": "[공학교육혁신센터] 계약직원 모집",
+    "source": "국민대 과학기술대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cst.kookmin.ac.kr/community/job/recruit/12375",
+    "summary": "과학기술대학 공지 · 게시일 2026-09-14"
+  },
+  {
+    "id": "cst-ccb048dfa2",
+    "title": "[브랜딩디자인센터] 계약직원 모집",
+    "source": "국민대 과학기술대학",
+    "category": "채용·인턴",
+    "interestTags": [
+      "디자인"
+    ],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cst.kookmin.ac.kr/community/job/recruit/12376",
+    "summary": "과학기술대학 공지 · 게시일 2026-09-14"
+  },
+  {
+    "id": "cst-f48fdae6aa",
+    "title": "[DBEW Award 운영센터] 계약직원 모집",
+    "source": "국민대 과학기술대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cst.kookmin.ac.kr/community/job/recruit/12382",
+    "summary": "과학기술대학 공지 · 게시일 2026-09-14"
+  },
+  {
+    "id": "ee-4ce214d22a",
+    "title": "HOSKO 미국 조지아주 사바나 현대모비스 모듈협력사 J-1인턴채용",
+    "source": "국민대 전자공학부",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://ee.kookmin.ac.kr/community/board/ee_recruit/1013",
+    "summary": "전자공학부 공지 · 게시일 2026-09-14"
+  },
+  {
+    "id": "cs-3d98ea6ea8",
+    "title": "[김.장 법률사무소] IT 부문 (개발, IT 운영, IT 지…",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "채용·인턴",
+    "interestTags": [
+      "소프트웨어"
+    ],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/jobs/2157",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-09-11"
+  },
+  {
+    "id": "cs-4be6eac8a6",
+    "title": "[경영대학 교학팀] 계약직원 모집 (9/16 자격요건 추…",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/kookmin/recruit/12369",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-09-11"
+  },
+  {
+    "id": "cs-52dab1ee69",
+    "title": "GS건설 2026 하반기 신입사원 채용 (~9/20 23시 까지)",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": "2026-09-20"
+    },
+    "deadlineDates": [
+      "2026-09-20"
+    ],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/jobs/2156",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-09-11"
+  },
+  {
+    "id": "cs-7497e1b275",
+    "title": "2026 AI역량평가 접수 안내",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "교육·특강",
+    "interestTags": [
+      "AI·데이터"
+    ],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/notice/2868",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-09-11"
+  },
+  {
+    "id": "cs-cb3bd5eb85",
+    "title": "[성곡도서관 학술정보팀] 계약직원 모집",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/kookmin/recruit/12368",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-09-11"
+  },
+  {
+    "id": "cs-d27f30a6eb",
+    "title": "실전프로젝트, UROP 수강생 대상 ★2026-2학기 연구실…",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/notice/2867",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-09-11"
+  },
+  {
+    "id": "cst-645097ac6c",
+    "title": "[경영대학 교학팀] 계약직원 모집 (9/16 자격요건 추가)",
+    "source": "국민대 과학기술대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cst.kookmin.ac.kr/community/job/recruit/12369",
+    "summary": "과학기술대학 공지 · 게시일 2026-09-11"
+  },
+  {
+    "id": "cst-ce6de868b8",
+    "title": "[성곡도서관 학술정보팀] 계약직원 모집",
+    "source": "국민대 과학기술대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cst.kookmin.ac.kr/community/job/recruit/12368",
+    "summary": "과학기술대학 공지 · 게시일 2026-09-11"
+  },
+  {
+    "id": "ee-032dd3e550",
+    "title": "[버킷플레이스] 오늘의집 Junior Business Partnership Manager(전환형) 채용 (~9/23…",
+    "source": "국민대 전자공학부",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": "2026-09-23"
+    },
+    "deadlineDates": [
+      "2026-09-23"
+    ],
+    "reviewRequired": true,
+    "link": "https://ee.kookmin.ac.kr/community/board/ee_recruit/1012",
+    "summary": "전자공학부 공지 · 게시일 2026-09-11"
+  },
+  {
+    "id": "cs-4b20e99175",
+    "title": "[한화에어로스페이스] 2026 하반기 대규모 신입사원 …",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/jobs/2155",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-09-10"
+  },
+  {
+    "id": "cs-8ff7ce8566",
+    "title": "[과학 단과대학 통합행정실] 계약직원 모집",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/kookmin/recruit/12362",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-09-10"
+  },
+  {
+    "id": "cst-936d78adeb",
+    "title": "[과학 단과대학 통합행정실] 계약직원 모집",
+    "source": "국민대 과학기술대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cst.kookmin.ac.kr/community/job/recruit/12362",
+    "summary": "과학기술대학 공지 · 게시일 2026-09-10"
+  },
+  {
+    "id": "ee-d0ba6f39d7",
+    "title": "2026 ICROS 학부생논문상 수상 / 전자공학부 학생들",
+    "source": "국민대 전자공학부",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://ee.kookmin.ac.kr/community/board/ee_news/391",
+    "summary": "전자공학부 공지 · 게시일 2026-09-10"
+  },
+  {
+    "id": "cs-7f9c1aadf4",
+    "title": "램리서치 일본 법인 신입 Field Service Engineer 모…",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/jobs/2154",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-09-09"
+  },
+  {
+    "id": "cs-a0f92625ac",
+    "title": "2026 하반기 아모레퍼시픽 신입사원 일반전형 채용(~…",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/jobs/2150",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-09-09"
+  },
+  {
+    "id": "cs-c57b6a59d7",
+    "title": "[현대그룹] 2026 하반기 현대그룹 신입 매니저 채용(…",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/jobs/2152",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-09-09"
+  },
+  {
+    "id": "cs-df78a44a09",
+    "title": "[에코마케팅] 2026 하반기 신입·경력 집중채용-1차 …",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "채용·인턴",
+    "interestTags": [
+      "마케팅"
+    ],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/jobs/2151",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-09-09"
+  },
+  {
+    "id": "cst-9aa7a4cf8d",
+    "title": "[공학교육혁신센터] 계약직원 모집",
+    "source": "국민대 과학기술대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cst.kookmin.ac.kr/community/job/recruit/12357",
+    "summary": "과학기술대학 공지 · 게시일 2026-09-09"
+  },
+  {
+    "id": "cst-fcd7190fab",
+    "title": "[공학III(소프트웨어) 통합행정실] 계약직원 모집(소프트웨어융합대학 교학팀)",
+    "source": "국민대 과학기술대학",
+    "category": "채용·인턴",
+    "interestTags": [
+      "소프트웨어"
+    ],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cst.kookmin.ac.kr/community/job/recruit/12358",
+    "summary": "과학기술대학 공지 · 게시일 2026-09-09"
+  },
+  {
+    "id": "cs-edda41a1b3",
+    "title": "2026년 하반기 인재육성 장학생 선발 계획 공고",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "장학금",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/kookmin/scholarship/12349",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-09-08"
+  },
+  {
+    "id": "cst-e2d36401a9",
+    "title": "[기후변화대응사업단] 미래혁신단 기후변화대응사업단 계약직원 모집",
+    "source": "국민대 과학기술대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cst.kookmin.ac.kr/community/job/recruit/12351",
+    "summary": "과학기술대학 공지 · 게시일 2026-09-08"
+  },
+  {
+    "id": "cst-5e0c452a84",
+    "title": "국민대학교 앵커사업단 「창조산업인재양성」 계약직 연구원 모집",
+    "source": "국민대 과학기술대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cst.kookmin.ac.kr/community/job/recruit/12347",
+    "summary": "과학기술대학 공지 · 게시일 2026-09-07"
+  },
+  {
+    "id": "cs-7415d70112",
+    "title": "2026년도 하반기 (재)인천인재평생교육진흥원 장학생…",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "장학금",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/kookmin/scholarship/12339",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-09-04"
+  },
+  {
+    "id": "cs-c7de46a201",
+    "title": "[차세대통신사업단] NEXT Career Connect 2026: AI가…",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "교육·특강",
+    "interestTags": [
+      "AI·데이터"
+    ],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/kookmin/special_lecture/12344",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-09-04"
+  },
+  {
+    "id": "cst-4ee20240fe",
+    "title": "[차세대통신사업단] NEXT Career Connect 2026: AI가 바꾸는 일과 미래 직무 특강 신…",
+    "source": "국민대 과학기술대학",
+    "category": "교육·특강",
+    "interestTags": [
+      "AI·데이터"
+    ],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cst.kookmin.ac.kr/community/special_lecture/12344",
+    "summary": "과학기술대학 공지 · 게시일 2026-09-04"
+  },
+  {
+    "id": "cs-4f0d80545f",
+    "title": "카카오모빌리티 캠퍼스 리쿠르팅 행사 안내 (9/18 12…",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/notice/2863",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-09-03"
+  },
+  {
+    "id": "cs-e579eb97f7",
+    "title": "2027학년도 1학기 자기설계연계/융합전공 신청 안내(…",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/notice/2862",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-09-03"
+  },
+  {
+    "id": "cs-089e01d3d4",
+    "title": "[학부] 2026학년도 2학기 조기졸업 신청 안내(9/18~9…",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/notice/2861",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-09-02"
+  },
+  {
+    "id": "cs-4f809069b8",
+    "title": "제36기 미래에셋 해외교환 장학생 선발 공고",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "장학금",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/kookmin/scholarship/12327",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-09-02"
+  },
+  {
+    "id": "cs-715c629b36",
+    "title": "Kookmin AI Builder Challenge 2026 바이브코딩 대회…",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "공모전·대회",
+    "interestTags": [
+      "AI·데이터",
+      "소프트웨어",
+      "디자인"
+    ],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/notice/2860",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-09-02"
+  },
+  {
+    "id": "cs-99fad346c0",
+    "title": "2026년 상반기 통영시 대학생 학자금 이자 지원 신청…",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "장학금",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/kookmin/scholarship/12324",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-09-02"
+  },
+  {
+    "id": "cs-f3b3f3cd3d",
+    "title": "2026년도 국가유산진흥원  전통 기·예능 분야 및 매…",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "장학금",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/kookmin/scholarship/12325",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-09-02"
+  },
+  {
+    "id": "cst-0f697fd7c6",
+    "title": "[미래자동차사업단] 26-2 현대NGV 온라인 교육 신청 안내(~선착순 마감)",
+    "source": "국민대 과학기술대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cst.kookmin.ac.kr/community/special_lecture/12331",
+    "summary": "과학기술대학 공지 · 게시일 2026-09-02"
+  },
+  {
+    "id": "cs-2c3bfbd48e",
+    "title": "2026년 제29기 두을장학재단 장학생 모집",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "장학금",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/kookmin/scholarship/12313",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-09-01"
+  },
+  {
+    "id": "cs-7c12e95665",
+    "title": "2026년도 (재)포항시장학회 대학교 장학생 선발 계획",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "장학금",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/kookmin/scholarship/12314",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-09-01"
+  },
+  {
+    "id": "cst-870b402d43",
+    "title": "[공학II(자동차) 통합행정실] 계약직원 모집(자동차모빌리티대학 교학팀)",
+    "source": "국민대 과학기술대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cst.kookmin.ac.kr/community/job/recruit/12320",
+    "summary": "과학기술대학 공지 · 게시일 2026-09-01"
+  },
+  {
+    "id": "cst-c5778301ad",
+    "title": "[글로벌창업벤처대학원 교학팀] 계약직원 모집",
+    "source": "국민대 과학기술대학",
+    "category": "채용·인턴",
+    "interestTags": [
+      "창업"
+    ],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cst.kookmin.ac.kr/community/job/recruit/12319",
+    "summary": "과학기술대학 공지 · 게시일 2026-09-01"
+  },
+  {
+    "id": "cs-b11107b7e8",
+    "title": "2026년 2학기 성남시 다자녀가구(셋쨰부터) 대학생 …",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "장학금",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/kookmin/scholarship/12304",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-08-31"
+  },
+  {
+    "id": "ee-352d99d38e",
+    "title": "[헤럴드 기업포럼 2026] 비욘드 팔로어, 선도 경제로의 전환(9/29)",
+    "source": "국민대 전자공학부",
+    "category": "공모전·대회",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://ee.kookmin.ac.kr/community/board/contest/328",
+    "summary": "전자공학부 공지 · 게시일 2026-08-31"
+  },
+  {
+    "id": "cs-71a37a4b20",
+    "title": "2026학년도 2학기 국가근로 장애학생도우미 모집공고…",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "장학금",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/kookmin/scholarship/12287",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-08-27"
+  },
+  {
+    "id": "cs-7e6bb8e2d6",
+    "title": "2026학년도 2학기 통학버스(셔틀버스) 운행시간 및 …",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/notice/2857",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-08-25"
+  },
+  {
+    "id": "cst-e6b37b1de2",
+    "title": "[기후변화대응사업단] 2026-2학기 인문사회융합세미나Ⅱ 특강(K기후환경포럼 클톡-Cli…",
+    "source": "국민대 과학기술대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cst.kookmin.ac.kr/community/special_lecture/12271",
+    "summary": "과학기술대학 공지 · 게시일 2026-08-25"
+  },
+  {
+    "id": "ee-e837334d26",
+    "title": "[총상금 1,400만원] AI·블록체인 공공 및 금융서비스 아이디어 경진대회",
+    "source": "국민대 전자공학부",
+    "category": "공모전·대회",
+    "interestTags": [
+      "AI·데이터"
+    ],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://ee.kookmin.ac.kr/community/board/contest/327",
+    "summary": "전자공학부 공지 · 게시일 2026-08-25"
+  },
+  {
+    "id": "cs-c24ff71e10",
+    "title": "2026학년도 2학기 외국인 신(편)입생 학생증 발급 안…",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/notice/2853",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-08-11"
+  },
+  {
+    "id": "ee-edbeefe872",
+    "title": "정보 일정한 폭 저장·누설전류 효과적 억제 '뉴로모픽 반도체 소자' 개발 / 이윤정(…",
+    "source": "국민대 전자공학부",
+    "category": "교육·특강",
+    "interestTags": [
+      "반도체",
+      "소프트웨어"
+    ],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://ee.kookmin.ac.kr/community/board/ee_news/390",
+    "summary": "전자공학부 공지 · 게시일 2026-08-10"
+  },
+  {
+    "id": "ee-6a4e13d765",
+    "title": "미국화학회 국제학술지 제1저자 논문 게재 / 하상훈(일반대학원 지능형반도체및디스…",
+    "source": "국민대 전자공학부",
+    "category": "교육·특강",
+    "interestTags": [
+      "반도체"
+    ],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://ee.kookmin.ac.kr/community/board/ee_news/389",
+    "summary": "전자공학부 공지 · 게시일 2026-07-24"
+  },
+  {
+    "id": "ee-6a2759ab63",
+    "title": "국방무인R&D센터, GE Aerospace와 기술 세미나 개최 …항공전자 연구개발 동향 공유",
+    "source": "국민대 전자공학부",
+    "category": "교육·특강",
+    "interestTags": [
+      "소프트웨어"
+    ],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://ee.kookmin.ac.kr/community/board/ee_news/388",
+    "summary": "전자공학부 공지 · 게시일 2026-07-02"
+  },
+  {
+    "id": "ee-7f5d2f714f",
+    "title": "고용노동부훈련생 …",
+    "source": "국민대 전자공학부",
+    "category": "공모전·대회",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://ee.kookmin.ac.kr/community/board/contest/326",
+    "summary": "전자공학부 공지 · 게시일 2026-06-25"
+  },
+  {
+    "id": "ee-d4e36945da",
+    "title": "국민대 이성원 교수 연구팀, 로보틱스 국제학술대회 IROS 2026 논문 게재",
+    "source": "국민대 전자공학부",
+    "category": "공모전·대회",
+    "interestTags": [
+      "창업"
+    ],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://ee.kookmin.ac.kr/community/board/ee_news/387",
+    "summary": "전자공학부 공지 · 게시일 2026-06-25"
+  },
+  {
+    "id": "cst-31c2cf06a2",
+    "title": "[RISE사업단] 「AI를 활용한 나만의 이모티콘 제작과 출시」 무료 강좌 안내",
+    "source": "국민대 과학기술대학",
+    "category": "교육·특강",
+    "interestTags": [
+      "AI·데이터"
+    ],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cst.kookmin.ac.kr/community/special_lecture/12004",
+    "summary": "과학기술대학 공지 · 게시일 2026-06-18"
+  },
+  {
+    "id": "cst-4d716883e4",
+    "title": "[미래인재교육원] 캐릭터 디자인 첫 걸음 with Adobe Illustrator",
+    "source": "국민대 과학기술대학",
+    "category": "교육·특강",
+    "interestTags": [
+      "디자인"
+    ],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cst.kookmin.ac.kr/community/special_lecture/12001",
+    "summary": "과학기술대학 공지 · 게시일 2026-06-18"
+  },
+  {
+    "id": "cst-7843d6ad38",
+    "title": "[미래자동차사업단] 2026 하계 비교과 Skill-up 미래자동차컨소시엄 협력교육 2차(아…",
+    "source": "국민대 과학기술대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cst.kookmin.ac.kr/community/special_lecture/12003",
+    "summary": "과학기술대학 공지 · 게시일 2026-06-18"
+  },
+  {
+    "id": "cst-8bba0d46c6",
+    "title": "[미래인재교육원] 속속들이 보이는 해부학 드로잉",
+    "source": "국민대 과학기술대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cst.kookmin.ac.kr/community/special_lecture/12000",
+    "summary": "과학기술대학 공지 · 게시일 2026-06-18"
+  },
+  {
+    "id": "cst-9ad1944ece",
+    "title": "[RISE사업단] 「생성형 AI를 활용한 퍼스널 브랜딩 콘텐츠」 무료 강좌 안내",
+    "source": "국민대 과학기술대학",
+    "category": "교육·특강",
+    "interestTags": [
+      "AI·데이터",
+      "디자인"
+    ],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cst.kookmin.ac.kr/community/special_lecture/12006",
+    "summary": "과학기술대학 공지 · 게시일 2026-06-18"
+  },
+  {
+    "id": "cst-f6334713d5",
+    "title": "[RISE사업단] 「AI 어시스턴트와 함께하는 일주일 완성 웹툰 클래스」 무료 강좌 안내",
+    "source": "국민대 과학기술대학",
+    "category": "교육·특강",
+    "interestTags": [
+      "AI·데이터"
+    ],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cst.kookmin.ac.kr/community/special_lecture/12005",
+    "summary": "과학기술대학 공지 · 게시일 2026-06-18"
+  },
+  {
+    "id": "cst-f821223374",
+    "title": "[미래인재교육원] 그림책 기획, 출판으로 N잡 커리어 만들기",
+    "source": "국민대 과학기술대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cst.kookmin.ac.kr/community/special_lecture/12002",
+    "summary": "과학기술대학 공지 · 게시일 2026-06-18"
+  },
+  {
+    "id": "cs-e1dc1d6722",
+    "title": "2026학년도 2학기 휴학 및 복학 시행 안내",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/notice/2835",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-06-17"
+  },
+  {
+    "id": "cst-8ac2f1614e",
+    "title": "[미래자동차사업단] 26-하계 현대NGV 온라인 교육 신청 안내(~6/26)",
+    "source": "국민대 과학기술대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": "2026-06-26"
+    },
+    "deadlineDates": [
+      "2026-06-26"
+    ],
+    "reviewRequired": true,
+    "link": "https://cst.kookmin.ac.kr/community/special_lecture/11980",
+    "summary": "과학기술대학 공지 · 게시일 2026-06-15"
+  },
+  {
+    "id": "ee-ca9e9e9eea",
+    "title": "2026 국민대학교 캡스톤디자인 아이디어 경진대회 개최 안내 (6/5~7/3)",
+    "source": "국민대 전자공학부",
+    "category": "공모전·대회",
+    "interestTags": [
+      "디자인"
+    ],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": "2026-07-03"
+    },
+    "deadlineDates": [
+      "2026-07-03"
+    ],
+    "reviewRequired": true,
+    "link": "https://ee.kookmin.ac.kr/community/board/contest/325",
+    "summary": "전자공학부 공지 · 게시일 2026-06-02"
+  },
+  {
+    "id": "ee-319881f9eb",
+    "title": "시스코 보안 아카데미 5기 클래스메이트 모집 안내(~5/25)",
+    "source": "국민대 전자공학부",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": "2026-05-25"
+    },
+    "deadlineDates": [
+      "2026-05-25"
+    ],
+    "reviewRequired": true,
+    "link": "https://ee.kookmin.ac.kr/community/board/contest/324",
+    "summary": "전자공학부 공지 · 게시일 2026-05-21"
+  },
+  {
+    "id": "ee-bcb81ed1ae",
+    "title": "울산과학대학교 조교수 임용 / 남규현(전자공학부 07) 동문",
+    "source": "국민대 전자공학부",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://ee.kookmin.ac.kr/community/board/ee_news/386",
+    "summary": "전자공학부 공지 · 게시일 2026-03-20"
+  },
+  {
+    "id": "ee-eb23b6649c",
+    "title": "2026 한국전자파학회 동계학술대회 우수 논문상 수상 / 배윤수(전자공학부 20), 박소…",
+    "source": "국민대 전자공학부",
+    "category": "공모전·대회",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://ee.kookmin.ac.kr/community/board/ee_news/385",
+    "summary": "전자공학부 공지 · 게시일 2026-03-20"
+  },
+  {
+    "id": "ee-d9caa97fd1",
+    "title": "[WorldQuant] 2026 국제 퀀트모의투자 대회(IQC) 안내",
+    "source": "국민대 전자공학부",
+    "category": "공모전·대회",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://ee.kookmin.ac.kr/community/board/contest/323",
+    "summary": "전자공학부 공지 · 게시일 2026-03-17"
+  },
+  {
+    "id": "cs-770956e2f7",
+    "title": "2026학년도 소프트웨어융합대학 멘토링 시스템 재개 …",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "교육·특강",
+    "interestTags": [
+      "소프트웨어"
+    ],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/notice/2801",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2026-03-11"
+  },
+  {
+    "id": "ee-88bfc9e72c",
+    "title": "국립부경대학교 조교수 임용 / 박해연(전자공학부 12) 동문",
+    "source": "국민대 전자공학부",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://ee.kookmin.ac.kr/community/board/ee_news/382",
+    "summary": "전자공학부 공지 · 게시일 2026-03-06"
+  },
+  {
+    "id": "ee-93aa5d044c",
+    "title": "로보틱스 최상위 학술대회 ICRA 2026 논문 게재 / 김준호(전자공학부 19) 학생",
+    "source": "국민대 전자공학부",
+    "category": "공모전·대회",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://ee.kookmin.ac.kr/community/board/ee_news/383",
+    "summary": "전자공학부 공지 · 게시일 2026-03-06"
+  },
+  {
+    "id": "ee-d3b594c0ba",
+    "title": "세계 최고 인공지능 학술대회 CVPR 2026에 논문 2편 동시 채택 / 이성원(전자공학부)…",
+    "source": "국민대 전자공학부",
+    "category": "공모전·대회",
+    "interestTags": [
+      "AI·데이터"
+    ],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://ee.kookmin.ac.kr/community/board/ee_news/384",
+    "summary": "전자공학부 공지 · 게시일 2026-03-06"
+  },
+  {
+    "id": "ee-2465c2edee",
+    "title": "[아시아경제/AI로봇교육]훈련생 …",
+    "source": "국민대 전자공학부",
+    "category": "공모전·대회",
+    "interestTags": [
+      "AI·데이터"
+    ],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://ee.kookmin.ac.kr/community/board/contest/322",
+    "summary": "전자공학부 공지 · 게시일 2025-12-09"
+  },
+  {
+    "id": "ee-b21dfeac30",
+    "title": "「제8회 해동 K*reator's Library TEAM 3D프린팅 대회」(~12/12)",
+    "source": "국민대 전자공학부",
+    "category": "공모전·대회",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": "2026-12-12"
+    },
+    "deadlineDates": [
+      "2026-12-12"
+    ],
+    "reviewRequired": true,
+    "link": "https://ee.kookmin.ac.kr/community/board/contest/321",
+    "summary": "전자공학부 공지 · 게시일 2025-10-30"
+  },
+  {
+    "id": "ee-9c99354a7b",
+    "title": "2025 스페이스 해커톤 대회 개최 안내(~11/12)",
+    "source": "국민대 전자공학부",
+    "category": "공모전·대회",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": "2026-11-12"
+    },
+    "deadlineDates": [
+      "2026-11-12"
+    ],
+    "reviewRequired": true,
+    "link": "https://ee.kookmin.ac.kr/community/board/contest/320",
+    "summary": "전자공학부 공지 · 게시일 2025-09-17"
+  },
+  {
+    "id": "cs-578a1aef19",
+    "title": "★학부(과) 졸업 인증 요건 변경 안내 (2025학번 이후…",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/notice/2663",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2025-06-16"
+  },
+  {
+    "id": "ee-4f9781ef5b",
+    "title": "2023년도 하반기 현대자동차 취업후기",
+    "source": "국민대 전자공학부",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://sess.kookmin.ac.kr/login.php?return_url=http%3A%2F%2Fee.kookmin.ac.kr%2Fcommunity%2Fboard%2Fjob_reviews%2F",
+    "summary": "전자공학부 공지 · 게시일 2024-03-13"
+  },
+  {
+    "id": "cs-663d685132",
+    "title": "취업 관련 출석인정신청 자격 및 절차 안내",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/notice/2329",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2023-09-12"
+  },
+  {
+    "id": "cs-f62c0c431e",
+    "title": "국민대학교 코딩역량 인증 제도 관련 변경사항 안내",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "교육·특강",
+    "interestTags": [
+      "소프트웨어"
+    ],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/notice/2268",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2023-05-31"
+  },
+  {
+    "id": "cs-b2458b7c8f",
+    "title": "★출석인정 신청(공결 신청) 관련★",
+    "source": "국민대 소프트웨어융합대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cs.kookmin.ac.kr/news/notice/2256",
+    "summary": "소프트웨어융합대학 공지 · 게시일 2023-05-15"
+  },
+  {
+    "id": "ee-3249df92e2",
+    "title": "[학생기자단] 전자공학부 졸업생(변리사,한전,삼성전자) 인터뷰 Q&A",
+    "source": "국민대 전자공학부",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://ee.kookmin.ac.kr/community/board/ee_recruit/40",
+    "summary": "전자공학부 공지 · 게시일 2017-08-23"
+  },
+  {
+    "id": "ee-ecb5829fbe",
+    "title": "[학생기자단] 그것이 알고싶다!! 전자공학부 취업 대분석",
+    "source": "국민대 전자공학부",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://ee.kookmin.ac.kr/community/board/ee_recruit/35",
+    "summary": "전자공학부 공지 · 게시일 2017-07-11"
+  },
+  {
+    "id": "cha-004131b104",
+    "title": "26년 8월 3주 차 채용 정보",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/china/recruitment/92",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-114ee6c9ca",
+    "title": "2026학년도 2학기 등록금 수납 일정 및 분할납부 안내",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/community/college/notice/615",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-11c763bf2a",
+    "title": "2026학년도 2학기 글로벌인문·지역대학 교학팀 근로장학생 모집 안내",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "장학금",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/community/college/notice/619",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-121ac6b3df",
+    "title": "중어중문학과 상담 신청 안내",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/china/china_notice/395",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-123780086f",
+    "title": "[교직] 2026-1학기 교직이수자 학사상담 내역 제출 안내 (1년 1회 필수)",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/china/china_notice/437",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-16757444af",
+    "title": "2026-2학기 수강신청 종합안내",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/community/college/notice/616",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-18a6f6af6a",
+    "title": "26년 7월 2주 차 채용정보",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/china/recruitment/87",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-19fd2f44ef",
+    "title": "출석 인정 신청 방법 안내",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/community/college/notice/583",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-1c86fbc1d2",
+    "title": "2026학년도 2학기 성곡서당 수강생 모집 안내 (~09/06)",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": "2026-09-06"
+    },
+    "deadlineDates": [
+      "2026-09-06"
+    ],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/community/college/notice/620",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-219608b1f5",
+    "title": "26년 8월 4주 차 채용 정보",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/china/recruitment/93",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-2fb975e8ce",
+    "title": "2026학년도 2학기 휴학 및 복학 신청 안내",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/community/college/notice/610",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-35f9a96f71",
+    "title": "[졸업] 2025학년도 후기 다전공 포기 및 부전공 신청 안내",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/china/china_notice/443",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-3b2f0579db",
+    "title": "26년 8월 2주차 채용 정보",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/community/college/recruitment/91",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-3d8677fbbe",
+    "title": "[졸업] 2025학년도 후기 예비졸업사정결과 확인 안내 (2026년 8월 졸업)",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/china/china_notice/441",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-42ef3cbd7c",
+    "title": "글로벌인문·지역대학 취업컨설팅 채널 오픈 안내",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/china/china_notice/377",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-50c7c7fe13",
+    "title": "26년 6월 3주차 채용 정보",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/community/college/recruitment/84",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-553014a889",
+    "title": "[졸업] 2025학년도 후기 졸업사정안내 (2026년 8월 졸업)",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/china/china_notice/440",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-55fa88dcd1",
+    "title": "26년 8월 1주차 채용 정보",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/community/college/recruitment/90",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-5e0ff5563c",
+    "title": "2026학년도 하계 방학 셧다운 기간 안내",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/community/college/notice/614",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-618f8f2c26",
+    "title": "26년 8월 5주, 9월 1주 차 채용정보",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/community/college/recruitment/94",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-61c7e03f35",
+    "title": "2026학년도 후기 일반대학원 중어중문학과 대학원 신입생 모집",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/china/china_notice/442",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-61f517108a",
+    "title": "26년 8월 2주차 채용 정보",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/china/recruitment/91",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-69cfef7e9c",
+    "title": "2026학년도 2학기 성적포기 신청 안내 (09/14 ~ 09/17)",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": "2026-09-17"
+    },
+    "deadlineDates": [
+      "2026-09-17"
+    ],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/community/college/notice/618",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-7752aa5e36",
+    "title": "26년 7월 4주, 5주차 채용정보",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/china/recruitment/89",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-78da43c675",
+    "title": "2026학년도 2학기 국내대학간 학점교류 신청 안내",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/community/college/notice/613",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-7eb6fb3d68",
+    "title": "26년 8월 5주, 9월 1주 차 채용정보",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/china/recruitment/94",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-81a02c8ae5",
+    "title": "2025학년도 후기(2026년 8월 졸업) 최종졸업사정 결과 확인 및 이의신청 안내 (07/13 ~ 07/20)",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": "2026-07-20"
+    },
+    "deadlineDates": [
+      "2026-07-20"
+    ],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/community/college/notice/611",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-82efb3a4a1",
+    "title": "글로벌인문·지역대학 홈페이지 개편(이전) 안내",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/community/college/notice/621",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-8424b510fe",
+    "title": "26년 6월 4주차 채용 정보",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/china/recruitment/85",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-857e73087d",
+    "title": "26년 6월 5주, 7월 1주 차 채용정보",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/community/college/recruitment/86",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-8e3f41bebd",
+    "title": "※공지사항 첨부파일이 열리지 않을 경우※",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/china/china_notice/331",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-8fd2c49b55",
+    "title": "2025학년도 후기(2026년 8월 졸업) 졸업사정 대상자 확인 안내",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/china/china_notice/439",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-99245a5551",
+    "title": "26년 7월 4주, 5주차 채용정보",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/community/college/recruitment/89",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-a3c5cc995f",
+    "title": "국민대학교 전체 공지사항 안내",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/china/china_notice/379",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-a856fab8b7",
+    "title": "2026학년도 2학기 초과학기자 학사 안내",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/community/college/notice/617",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-b30cd27f68",
+    "title": "26년 6월 3주차 채용 정보",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/china/recruitment/84",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-babf0b6887",
+    "title": "26년 7월 2주 차 채용정보",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/community/college/recruitment/87",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-bbfd502f84",
+    "title": "26년 6월 5주, 7월 1주 차 채용정보",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/china/recruitment/86",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-c595cc104b",
+    "title": "강의실 사용 신청서 양식",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/china/china_notice/373",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-ca6530386a",
+    "title": "국가장학금 등 학자금 지원을 위한 지원 구간 체계 개편 안내(2027년부터 적용)",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "장학금",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/community/college/notice/596",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-cd9784be0e",
+    "title": "2025학년도 후기(2026년 8월 졸업) 졸업연기 및 유예신청 안내 (07/20 ~ 07/22)",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": "2026-07-22"
+    },
+    "deadlineDates": [
+      "2026-07-22"
+    ],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/community/college/notice/612",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-ce2399c6be",
+    "title": "※중어중문학과 담당자 이메일 안내※",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/china/china_notice/301",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-d0f9c9b31f",
+    "title": "26년 8월 3주 차 채용 정보",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/community/college/recruitment/92",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-d2baeac770",
+    "title": "26년 7월 3주 차 채용정보",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/china/recruitment/88",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-d6e1e87c95",
+    "title": "26년 6월 4주차 채용 정보",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/community/college/recruitment/85",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-e683862b31",
+    "title": "[중어중문학과] 졸업요건 안내",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/china/china_notice/431",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-e6e74800d9",
+    "title": "26년 7월 3주 차 채용정보",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/community/college/recruitment/88",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-ea7f0067e2",
+    "title": "2026 북경화공대학 국제 과학 기술 혁신 캠프 모집 안내 (~04.24(금) 12:00)",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/china/china_notice/438",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-ecad0df4ae",
+    "title": "26년 8월 1주차 채용 정보",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/china/recruitment/90",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-edc08b641f",
+    "title": "ON국민 포털 로그인 보안강화(2차인증) 적용 안내",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/community/college/notice/604",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-efb7ccaab8",
+    "title": "신규 학회 등록 신청 안내",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/china/china_notice/372",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cha-f256cc8949",
+    "title": "26년 8월 4주 차 채용 정보",
+    "source": "국민대 글로벌인문·지역대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cha.kookmin.ac.kr/community/college/recruitment/93",
+    "summary": "글로벌인문·지역대학 공지"
+  },
+  {
+    "id": "cst-180c8586b0",
+    "title": "2026년도 산림청 임업직 국가공무원 경력경쟁채용시험 공고 …",
+    "source": "국민대 과학기술대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cst.kookmin.ac.kr/community/notice/591",
+    "summary": "과학기술대학 공지"
+  },
+  {
+    "id": "cst-3ae9d306ba",
+    "title": "[S-TEAM 학습지원] 2026학년도 2학기 학습법 특강 프로그램 …",
+    "source": "국민대 과학기술대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cst.kookmin.ac.kr/community/notice/599",
+    "summary": "과학기술대학 공지"
+  },
+  {
+    "id": "cst-3dda61d605",
+    "title": "2026학년도 2학기 조기졸업 신청 안내",
+    "source": "국민대 과학기술대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cst.kookmin.ac.kr/community/notice/593",
+    "summary": "과학기술대학 공지"
+  },
+  {
+    "id": "cst-47953d6e8a",
+    "title": "2026학년도 2학기 기초학습역량 강화 프로그램 안내",
+    "source": "국민대 과학기술대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cst.kookmin.ac.kr/community/notice/595",
+    "summary": "과학기술대학 공지"
+  },
+  {
+    "id": "cst-57a3dfea67",
+    "title": "서울워터 잡페어(물산업 일자리 박람회) 개최 안내",
+    "source": "국민대 과학기술대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cst.kookmin.ac.kr/community/notice/594",
+    "summary": "과학기술대학 공지"
+  },
+  {
+    "id": "cst-84829c2767",
+    "title": "2026 해동 K*reator's Library TEAM 3D프린팅 대회 개최 안내",
+    "source": "국민대 과학기술대학",
+    "category": "공모전·대회",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cst.kookmin.ac.kr/community/notice/597",
+    "summary": "과학기술대학 공지"
+  },
+  {
+    "id": "cst-8837455e86",
+    "title": "2026 성곡도서관 이용자 만족도 조사 참여 안내",
+    "source": "국민대 과학기술대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cst.kookmin.ac.kr/community/notice/598",
+    "summary": "과학기술대학 공지"
+  },
+  {
+    "id": "cst-92f3cd5aba",
+    "title": "2026-2학기 일반대학원 수업연한 단축신청서 제출 안내",
+    "source": "국민대 과학기술대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cst.kookmin.ac.kr/community/notice/586",
+    "summary": "과학기술대학 공지"
+  },
+  {
+    "id": "cst-a78319b5eb",
+    "title": "2026 K-NIBRT 바이올(Bio-All) 4기 교육생 모집 안내",
+    "source": "국민대 과학기술대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cst.kookmin.ac.kr/community/notice/590",
+    "summary": "과학기술대학 공지"
+  },
+  {
+    "id": "cst-aec9e4e64a",
+    "title": "2026-2학기 일반대학원 모의토익 프로그램 안내",
+    "source": "국민대 과학기술대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cst.kookmin.ac.kr/community/notice/589",
+    "summary": "과학기술대학 공지"
+  },
+  {
+    "id": "cst-af33ec7f76",
+    "title": "생태 환경 분야 청년 취업 지원 및 진로 교육 참가자 모집 안…",
+    "source": "국민대 과학기술대학",
+    "category": "채용·인턴",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cst.kookmin.ac.kr/community/notice/592",
+    "summary": "과학기술대학 공지"
+  },
+  {
+    "id": "cst-d0054b7135",
+    "title": "2026학년도 2학기 신입생 성곡도서관 이용 교육 실시 안내",
+    "source": "국민대 과학기술대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cst.kookmin.ac.kr/community/notice/587",
+    "summary": "과학기술대학 공지"
+  },
+  {
+    "id": "cst-db1087b198",
+    "title": "2026-2학기 학적 변경시 등록금 반환 기준 안내 (휴학 등)",
+    "source": "국민대 과학기술대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cst.kookmin.ac.kr/community/notice/588",
+    "summary": "과학기술대학 공지"
+  },
+  {
+    "id": "cst-e01621b825",
+    "title": "2026학년도 재학생 K*lass-Up 프로그램(제2기) 참여 안내",
+    "source": "국민대 과학기술대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cst.kookmin.ac.kr/community/notice/596",
+    "summary": "과학기술대학 공지"
+  },
+  {
+    "id": "cst-eeb83efab0",
+    "title": "2026학년도 2학기 성적포기 신청 안내",
+    "source": "국민대 과학기술대학",
+    "category": "교육·특강",
+    "interestTags": [],
+    "gradeCodes": null,
+    "degreeLevels": null,
+    "majorOpen": true,
+    "majorList": [],
+    "majorStatus": "unknown",
+    "events": [],
+    "applyPeriod": {
+      "start": null,
+      "end": null
+    },
+    "deadlineDates": [],
+    "reviewRequired": true,
+    "link": "https://cst.kookmin.ac.kr/community/notice/582",
+    "summary": "과학기술대학 공지"
+  }
+]

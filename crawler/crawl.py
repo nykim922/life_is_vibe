@@ -17,8 +17,9 @@ import sys
 import time
 import sqlite3
 import re
+from datetime import date
+from pathlib import Path
 from urllib.parse import urljoin
-from xml.etree import ElementTree as ET
 
 import requests
 from bs4 import BeautifulSoup
@@ -39,7 +40,8 @@ HEADERS = {
     "User-Agent": "Mozilla/5.0 (compatible; KMU-CampusSecretary-Crawler/1.0)"
 }
 
-DB_PATH = "notices.db"
+CRAWLER_DIR = Path(__file__).resolve().parent
+DB_PATH = CRAWLER_DIR / "notices.db"
 
 
 def fetch(url: str) -> str | None:
@@ -89,12 +91,18 @@ def _norm_date(text: str) -> str:
     dm = re.search(r"(20\d{2})[-.](\d{1,2})[-.](\d{1,2})", text)
     if dm:
         y, mo, d = dm.groups()
-        return f"{int(y)}-{int(mo):02d}-{int(d):02d}"
+        try:
+            return date(int(y), int(mo), int(d)).isoformat()
+        except ValueError:
+            return ""
     # 2자리 연도 (예: 26.09.18)
     dm = re.search(r"\b(\d{2})[.\-](\d{1,2})[.\-](\d{1,2})\b", text)
     if dm:
         y, mo, d = dm.groups()
-        return f"20{y}-{int(mo):02d}-{int(d):02d}"
+        try:
+            return date(2000 + int(y), int(mo), int(d)).isoformat()
+        except ValueError:
+            return ""
     return ""
 
 
@@ -206,10 +214,15 @@ def save(conn: sqlite3.Connection, rows: list[dict]):
             (id, college_key, college_name, source, title, category, deadline, posted_date, link, interest_tags, crawled_at)
             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             ON CONFLICT(id) DO UPDATE SET
+                college_key=excluded.college_key,
+                college_name=excluded.college_name,
+                source=excluded.source,
                 title=excluded.title,
                 category=excluded.category,
                 deadline=excluded.deadline,
                 posted_date=excluded.posted_date,
+                link=excluded.link,
+                interest_tags=excluded.interest_tags,
                 crawled_at=excluded.crawled_at
             """,
             (
@@ -241,7 +254,7 @@ def crawl_college(conn: sqlite3.Connection, college: dict):
         rows = []
         for it in items:
             cat = categorize(path, it["title"])
-            deadline = extract_deadline(it["title"])
+            deadline = extract_deadline(it["title"], year_hint=date.today().year)
             rows.append({
                 "id": make_id(key, it["link"]),
                 "college_key": key,
