@@ -5,6 +5,8 @@ import { config, googleConfigured } from './config'
 import { sessionMiddleware } from './session'
 import { authRouter } from './routes/auth'
 import { calendarRouter } from './routes/calendar'
+import { recommendRouter } from './routes/recommend'
+import { isAiConfigured } from './ai/aiClient'
 
 const app = express()
 
@@ -22,12 +24,20 @@ app.use(cookieParser())
 app.use(sessionMiddleware)
 
 // 헬스체크 (Nginx/systemd 상태 확인용)
+// googleConfigured: Google OAuth 자격증명 설정 여부
+// aiConfigured: AI 추천 게이트웨이 키 설정 여부 (미설정 시 규칙 기반 폴백)
 app.get('/api/health', (_req, res) => {
-  res.json({ ok: true, googleConfigured, env: config.nodeEnv })
+  res.json({
+    ok: true,
+    googleConfigured,
+    aiConfigured: isAiConfigured(),
+    env: config.nodeEnv,
+  })
 })
 
 app.use('/api/auth', authRouter)
 app.use('/api/calendar', calendarRouter)
+app.use('/api/recommend', recommendRouter)
 
 // 알 수 없는 /api 경로
 app.use('/api', (_req, res) => {
@@ -37,7 +47,7 @@ app.use('/api', (_req, res) => {
 // 서버는 127.0.0.1 내부 포트에서만 수신 (외부 공개는 Nginx 담당)
 app.listen(config.port, config.host, () => {
   console.log(
-    `[server] 캠퍼스 비서 백엔드 실행 → http://${config.host}:${config.port} (env=${config.nodeEnv}, google=${googleConfigured ? 'on' : 'off'})`,
+    `[server] 캠퍼스 비서 백엔드 실행 → http://${config.host}:${config.port} (env=${config.nodeEnv}, google=${googleConfigured ? 'on' : 'off'}, ai=${isAiConfigured() ? 'on' : 'off(규칙 기반 폴백)'})`,
   )
 })
 

@@ -1,7 +1,8 @@
-import { useEffect, useMemo, useRef } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { useStore } from '../store'
 import { useToast } from '../components/Toast'
-import { recommend } from '../data/recommend'
+import { recommend, type ScoredNotice } from '../data/recommend'
+import { recommendWithAi } from '../data/aiClient'
 import { CATEGORY_FILTERS } from '../data/options'
 import { isWeekend } from '../data/dates'
 import type { Category } from '../data/types'
@@ -66,8 +67,39 @@ export function Home({ onOpenDetail, onEditProfile, ui, onUiChange }: Props) {
     [notices, profile, state.hiddenIds],
   )
 
+  // AI가 다듬은 추천 (없으면 규칙 기반 scored 를 그대로 사용)
+  const [aiScored, setAiScored] = useState<ScoredNotice[] | null>(null)
+  const [aiUsed, setAiUsed] = useState(false)
+  const [aiLoading, setAiLoading] = useState(false)
+
+  useEffect(() => {
+    setAiScored(null)
+    setAiUsed(false)
+    if (scored.length === 0) return
+
+    let cancelled = false
+    setAiLoading(true)
+    recommendWithAi(scored, profile)
+      .then((result) => {
+        if (cancelled) return
+        if (result.aiUsed) {
+          setAiScored(result.items)
+          setAiUsed(true)
+        }
+      })
+      .finally(() => {
+        if (!cancelled) setAiLoading(false)
+      })
+
+    return () => {
+      cancelled = true
+    }
+  }, [scored, profile])
+
+  const baseList = aiScored ?? scored
+
   const filtered = useMemo(() => {
-    let list = scored
+    let list = baseList
     if (u.category !== '전체') list = list.filter((s) => s.notice.category === u.category)
     if (u.online) list = list.filter((s) => s.notice.online)
     if (u.free) list = list.filter((s) => s.notice.cost === 'free')
@@ -83,7 +115,7 @@ export function Home({ onOpenDetail, onEditProfile, ui, onUiChange }: Props) {
       })
     }
     return list
-  }, [scored, u])
+  }, [baseList, u])
 
   const summary = `${profile.major} · ${profile.grade}학년 · ${
     profile.interests.slice(0, 2).join(', ') || '관심분야 미설정'
@@ -167,7 +199,11 @@ export function Home({ onOpenDetail, onEditProfile, ui, onUiChange }: Props) {
         </button>
       </div>
 
-      <p className="home__count">{filtered.length}개의 추천</p>
+      <p className="home__count">
+        {filtered.length}개의 추천
+        {aiLoading && <span className="home__ai"> · AI가 추천 이유를 다듬는 중…</span>}
+        {!aiLoading && aiUsed && <span className="home__ai home__ai--on"> · AI 추천</span>}
+      </p>
 
       {filtered.length === 0 ? (
         <div className="empty">
